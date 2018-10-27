@@ -584,4 +584,9 @@ Groovy、Python、Go、NodeJs、Swift、Rust
 
 《深入理解Java虚拟机》 《Effective Java》 《深入分析Java Web技术内幕》 《大型网站技术架构》 《代码整洁之道》 《Head First设计模式》 《maven实战》 《区块链原理、设计与应用》 《Java并发编程实战》 《鸟哥的Linux私房菜》 《从Paxos到Zookeeper》 《架构即未来》
 
+-------------
+
+扫描二维码，关注Hollis，所有内容第一时间在公众号更新
+
 ![](http://www.hollischuang.com/wp-content/uploads/2018/10/%E4%BA%8C%E7%BB%B4%E7%A0%81%E7%BE%8E%E5%8C%96-1.png)
+
