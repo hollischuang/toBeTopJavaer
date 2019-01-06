@@ -12,9 +12,9 @@ Here We Go!
 
 [《成神之路-基础篇》JVM——JVM内存结构](/basics/jvm/jvm-memory-structure.md)
 
-[《成神之路-基础篇》JVM——Java内存模型](/basics/jvm/java-object-model.md)
+[《成神之路-基础篇》JVM——Java内存模型](/basics/jvm/java-memory-model.md)
 
-[《成神之路-基础篇》JVM——Java对象模型](/basics/jvm/java-memory-model.md)
+[《成神之路-基础篇》JVM——Java对象模型](/basics/jvm/java-object-model.md)
 
 [《成神之路-基础篇》JVM——HotSpot][5]
 
