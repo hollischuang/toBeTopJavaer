@@ -4,6 +4,7 @@
 
 ![](https://img.shields.io/badge/update-v1.0.0-green.svg) ![](https://img.shields.io/badge/author-Hollis-yellow.svg) ![](https://img.shields.io/badge/license-GPL-blue.svg)
 
+分章分节介绍所有知识点，详见[目录](/catalog/catalog.vm)。欢迎关注。
 
 | 主要版本 | 更新时间       | 备注             |
 | ---- | ---------- | -------------- |
