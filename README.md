@@ -591,3 +591,12 @@ Groovy、Python、Go、NodeJs、Swift、Rust
 
 ![](http://www.hollischuang.com/wp-content/uploads/2018/10/%E4%BA%8C%E7%BB%B4%E7%A0%81%E7%BE%8E%E5%8C%96-1.png)
 
+
+### Code Visualization:
+
+Here is a cool visualization of the code evolution
+
+ [![Watch the video](https://img.youtube.com/vi/_xWZW3CuX-0/0.jpg)](https://www.youtube.com/watch?v=_xWZW3CuX-0)
+
+ [https://www.youtube.com/watch?v=_xWZW3CuX-0](https://www.youtube.com/watch?v=_xWZW3CuX-0)
+
