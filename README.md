@@ -10,44 +10,9 @@
 | ---- | ---------- | -------------- |
 | v1.0 | 2015-08-01 | 首次发布           |
 | v1.1 | 2018-03-12 | 增加新技术知识、完善知识体系 |
+| v1.2 | 2019-02-19 | 结构调整，更适合从入门到精通，进一步完善知识体系 |
 
 ## 一、基础篇
-
-### JVM
-
-#### JVM内存结构
-
-堆、栈、方法区、直接内存、堆和栈区别
-
-#### Java内存模型
-
-内存可见性、重排序、顺序一致性、volatile、锁、final
-
-#### 垃圾回收
-
-内存分配策略、垃圾收集器（G1）、GC算法、GC参数、对象存活的判定
-
-#### JVM参数及调优
-
-#### Java对象模型
-
-oop-klass、对象头
-
-#### HotSpot
-
-即时编译器、编译优化
-
-#### 类加载机制
-
-classLoader、类加载过程、双亲委派（破坏双亲委派）、模块化（jboss modules、osgi、jigsaw）
-
-#### 虚拟机性能监控与故障处理工具
-
-jps, jstack, jmap、jstat, jconsole, jinfo, jhat, javap, btrace、TProfiler
-
-### 编译与反编译
-
-javac 、javap 、jad 、CRF
 
 ### Java基础知识
 
@@ -55,23 +20,35 @@ javac 、javap 、jad 、CRF
 
 String、Integer、Long、Enum、BigDecimal、ThreadLocal、ClassLoader & URLClassLoader、ArrayList & LinkedList、 HashMap & LinkedHashMap & TreeMap & CouncurrentHashMap、HashSet & LinkedHashSet & TreeSet
 
-#### Java中各种变量类型
+#### 基本数据类型
 
-#### 熟悉Java String的使用，熟悉String的各种函数
+7种基本数据类型：整型、浮点型、布尔型、字符型
+
+整型中byte、short、int、long的取值范围
+
+什么是浮点型？什么是单精度和双精度？为什么不能用浮点型表示金额？
+
+#### 自动拆装箱
+
+什么是包装类型、什么是基本类型、什么是自动拆装箱
+
+Integer的缓存机制
+
+#### String
+
+字符串的不可变性
 
 JDK 6和JDK 7中substring的原理及区别、
 
 replaceFirst、replaceAll、replace区别、
 
-String对“+”的重载、
+String对“+”的重载、字符串拼接的几种方式和区别
 
 String.valueOf和Integer.toString的区别、
 
-字符串的不可变性
+switch对String的支持
 
-#### 自动拆装箱
-
-Integer的缓存机制
+字符串池、常量池（运行时常量池、Class常量池）、intern
 
 #### 熟悉Java中各种关键字
 
@@ -79,19 +56,55 @@ transient、instanceof、volatile、synchronized、final、static、const 原理
 
 #### 集合类
 
-常用集合类的使用、ArrayList和LinkedList和Vector的区别 、SynchronizedList和Vector的区别、HashMap、HashTable、ConcurrentHashMap区别、Java 8中stream相关用法、apache集合处理工具类的使用、不同版本的JDK中HashMap的实现的区别以及原因
+常用集合类的使用、ArrayList和LinkedList和Vector的区别 、SynchronizedList和Vector的区别、HashMap、HashTable、ConcurrentHashMap区别、
+
+Set和List区别？Set如何保证元素不重复？
+
+Java 8中stream相关用法、apache集合处理工具类的使用、不同版本的JDK中HashMap的实现的区别以及原因
+
+Collection和Collections区别
+
+Arrays.asList获得的List使用时需要注意什么
+
+Enumeration和Iterator区别
+
+fail-fast 和 fail-safe
+
+CopyOnWriteArrayList、ConcurrentSkipListMap
 
 #### 枚举
 
-枚举的用法、枚举与单例、Enum类
+枚举的用法、枚举的实现、枚举与单例、Enum类
+
+Java枚举如何比较
+
+switch对枚举的支持
+
+枚举的序列化如何实现
+
+枚举的线程安全性问题
 
 #### Java IO&Java NIO，并学会使用
 
-bio、nio和aio的区别、三种IO的用法与原理、netty
+字符流、字节流、输入流、输出流、
+
+同步、异步、阻塞、非阻塞、Linux 5种IO模型
+
+BIO、NIO和AIO的区别、三种IO的用法与原理、netty
 
 #### Java反射与javassist
 
 反射与工厂模式、 `java.lang.reflect.*`
+
+#### 动态代理
+
+静态代理、动态代理
+
+动态代理和反射的关系
+
+动态代理的几种实现方式
+
+AOP
 
 #### Java序列化
 
@@ -127,25 +140,47 @@ junit、mock、mockito、内存数据库（h2）
 
 #### 什么是API&SPI
 
+如何定义SPI、SPI的实现原理
+
 #### 异常
 
 异常类型、正确处理异常、自定义异常
 
+Error和Exception
+
+异常链、try-with-resources
+
 #### 时间处理
 
-时区、时令、Java中时间API
+时区、冬令时和夏令时、时间戳、Java中时间API
+
+SimpleDateFormat的线程安全性问题
+
+Java 8中的时间处理
 
 #### 编码方式
 
-解决乱码问题、常用编码方式
+Unicode、有了Unicode为啥还需要UTF-8
+
+GBK、GB2312、GB18030之间的区别
+
+UTF8、UTF16、UTF32区别
+
+URL编解码、Big Endian和Little Endian
+
+如何解决乱码问题
 
 #### 语法糖
 
 Java中语法糖原理、解语法糖
 
+语法糖：switch 支持 String 与枚举、泛型、自动装箱与拆箱、方法变长参数、枚举、内部类、条件编译、 断言、数值字面量、for-each、try-with-resource、Lambda表达式、
+
 ### Java并发编程
 
 #### 什么是线程，与进程的区别
+
+线程的实现、线程的状态、优先级、线程调度、创建线程的多种方式、守护线程
 
 #### 阅读源代码，并学会使用
 
@@ -153,7 +188,9 @@ Thread、Runnable、Callable、ReentrantLock、ReentrantReadWriteLock、Atomic*�
 
 #### 线程池
 
-自己设计线程池、submit() 和 execute()
+自己设计线程池、submit() 和 execute()、线程池原理
+
+为什么不允许使用Executors创建线程池
 
 #### 线程安全
 
@@ -161,17 +198,29 @@ Thread、Runnable、Callable、ReentrantLock、ReentrantReadWriteLock、Atomic*�
 
 #### 锁
 
-CAS、乐观锁与悲观锁、数据库相关锁机制、分布式锁、偏向锁、轻量级锁、重量级锁、monitor、锁优化、锁消除、锁粗化、自旋锁、可重入锁、阻塞锁、死锁
+CAS、乐观锁与悲观锁、数据库相关锁机制、分布式锁、偏向锁、轻量级锁、重量级锁、monitor、
+
+锁优化、锁消除、锁粗化、自旋锁、可重入锁、阻塞锁、死锁
 
 #### 死锁
 
-#### volatile
-
-happens-before、编译器指令重排和CPU指令重
-
 #### synchronized
 
-synchronized是如何实现的？synchronized和lock之间关系、不使用synchronized如何实现一个线程安全的单例
+synchronized是如何实现的？
+
+synchronized和lock之间关系、不使用synchronized如何实现一个线程安全的单例
+
+synchronized和原子性、可见性和有序性之间的关系
+
+#### volatile
+
+happens-before、内存屏障、编译器指令重排和CPU指令重
+
+volatile的实现原理
+
+volatile和原子性、可见性和有序性之间的关系
+
+有了symchronized为什么还需要volatile
 
 #### sleep 和 wait
 
@@ -185,11 +234,67 @@ synchronized是如何实现的？synchronized和lock之间关系、不使用sync
 
 #### 写代码来解决生产者消费者问题
 
-#### 守护线程
+### 并发包
 
-守护线程和非守护线程的区别以及用法
+## 二、底层篇
 
-## 二、 进阶篇
+### JVM
+
+#### JVM内存结构
+
+class文件格式、运行时数据区：堆、栈、方法区、直接内存、运行时常量池、
+
+堆和栈区别、
+
+Java中的对象一定在堆上分配吗？
+
+#### Java内存模型
+
+计算机内存模型、缓存一致性、MESI协议
+
+可见性、原子性、顺序性、happens-before、
+
+内存屏障、synchronized、volatile、final、锁
+
+#### 垃圾回收
+
+GC算法：标记清除、引用计数、复制、标记压缩、分代回收、增量式回收
+
+GC参数、对象存活的判定、垃圾收集器（CMS、G1、ZGC、Epsilon）
+
+#### JVM参数及调优
+
+-Xmx、-Xmn、-Xms、Xss、-XX:SurvivorRatio、
+
+-XX:PermSize、-XX:MaxPermSize、-XX:MaxTenuringThreshold
+
+#### Java对象模型
+
+oop-klass、对象头
+
+#### HotSpot
+
+即时编译器、编译优化
+
+#### 虚拟机性能监控与故障处理工具
+
+jps, jstack, jmap、jstat, jconsole, jinfo, jhat, javap, btrace、TProfiler
+
+### 类加载机制
+
+classLoader、类加载过程、双亲委派（破坏双亲委派）、模块化（jboss modules、osgi、jigsaw）
+
+### 编译与反编译
+
+什么是编译（前端编译、后端编译）、什么是反编译
+
+JIT、JIT优化（逃逸分析、栈上分配、标量替换、锁优化）
+
+编译工具：javac
+
+反编译工具：javap 、jad 、CRF
+
+## 三、 进阶篇
 
 ### Java底层知识
 
@@ -289,7 +394,7 @@ Spring Boot的starter原理，自己实现一个starter
 
 #### maven & gradle
 
-## 三、 高级篇
+## 四、 高级篇
 
 ### 新技术
 
@@ -467,7 +572,7 @@ memcached为什么可以导致DDos攻击、什么是反射型DDoS
 
 #### 用openssl签一个证书部署到apache或nginx
 
-## 四、架构篇
+## 五、架构篇
 
 ### 分布式
 
@@ -543,7 +648,7 @@ DNS原理、DNS的设计
 
 数据一致性
 
-## 五、 扩展篇
+## 六、 扩展篇
 
 ### 云计算
 
