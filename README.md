@@ -14,11 +14,39 @@
 
 ## 一、基础篇
 
+### 面向对象
+
+#### 什么是面向对象
+
+面向对象、面向过程
+
+面向对象的三大基本特征和五大基本原则
+
+#### 平台无关性
+
+Java如何实现的平台无关
+
+JVM还支持哪些语言（Kotlin、Groovy、JRuby、Jython、Scala）
+
+#### 值传递
+
+值传递、引用传递
+
+为什么说Java中只有值传递
+
+#### 封装、继承、多态
+
+什么是多态、方法重写与重载
+
+Java的继承与实现
+
+构造函数与默认构造函数
+
+类变量、成员变量和局部变量
+
+成员变量和方法作用域
+
 ### Java基础知识
-
-#### 阅读源代码
-
-String、Integer、Long、Enum、BigDecimal、ThreadLocal、ClassLoader & URLClassLoader、ArrayList & LinkedList、 HashMap & LinkedHashMap & TreeMap & CouncurrentHashMap、HashSet & LinkedHashSet & TreeSet
 
 #### 基本数据类型
 
@@ -176,15 +204,18 @@ Java中语法糖原理、解语法糖
 
 语法糖：switch 支持 String 与枚举、泛型、自动装箱与拆箱、方法变长参数、枚举、内部类、条件编译、 断言、数值字面量、for-each、try-with-resource、Lambda表达式、
 
+### 阅读源代码
+
+String、Integer、Long、Enum、BigDecimal、ThreadLocal、ClassLoader & URLClassLoader、ArrayList & LinkedList、 HashMap & LinkedHashMap & TreeMap & CouncurrentHashMap、HashSet & LinkedHashSet & TreeSet
+
 ### Java并发编程
+
+#### 并发与并行
+
 
 #### 什么是线程，与进程的区别
 
 线程的实现、线程的状态、优先级、线程调度、创建线程的多种方式、守护线程
-
-#### 阅读源代码，并学会使用
-
-Thread、Runnable、Callable、ReentrantLock、ReentrantReadWriteLock、Atomic*、Semaphore、CountDownLatch、、ConcurrentHashMap、Executors
 
 #### 线程池
 
@@ -235,6 +266,10 @@ volatile和原子性、可见性和有序性之间的关系
 #### 写代码来解决生产者消费者问题
 
 ### 并发包
+
+#### 阅读源代码，并学会使用
+
+Thread、Runnable、Callable、ReentrantLock、ReentrantReadWriteLock、Atomic*、Semaphore、CountDownLatch、、ConcurrentHashMap、Executors
 
 ## 二、底层篇
 
