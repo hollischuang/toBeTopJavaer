@@ -2,7 +2,7 @@
 
 ## To Be Top Javaer  -  Java工程师成神之路
 
-![](https://img.shields.io/badge/update-v1.0.0-green.svg) ![](https://img.shields.io/badge/author-Hollis-yellow.svg) ![](https://img.shields.io/badge/license-GPL-blue.svg)
+![](https://img.shields.io/badge/version-v2.0.0-green.svg) ![](https://img.shields.io/badge/author-Hollis-yellow.svg) ![](https://img.shields.io/badge/license-GPL-blue.svg)
 
 分章分节介绍所有知识点，详见[目录](/catalog/catalog.md)。欢迎关注。
 
@@ -10,7 +10,7 @@
 | ---- | ---------- | -------------- |
 | v1.0 | 2015-08-01 | 首次发布           |
 | v1.1 | 2018-03-12 | 增加新技术知识、完善知识体系 |
-| v1.2 | 2019-02-19 | 结构调整，更适合从入门到精通，进一步完善知识体系 |
+| v2.0 | 2019-02-19 | 结构调整，更适合从入门到精通；<br>进一步完善知识体系； <br>新技术补充；|
 
 ## 一、基础篇
 
@@ -387,7 +387,11 @@ cookie被禁用，如何实现session
 
 #### 什么是DNS？
 
+DNS污染、DNS劫持
+
 #### 反向代理
+
+正向代理、反向代理、反向代理服务器、
 
 ### 框架知识
 
@@ -407,11 +411,27 @@ cookie被禁用，如何实现session
 
 #### Spring MVC
 
-#### Spring Boot2.0
+#### Spring Boot
+
+Spring Boot 2.0、起步依赖、自动配置、
 
 Spring Boot的starter原理，自己实现一个starter
 
 #### Spring Security
+
+### Spring Cloud
+
+服务发现与注册：Eureka、Zookeeper、Consul
+
+负载均衡：Feign、Spring Cloud Loadbalance
+
+服务配置：Spring Cloud Config
+
+服务限流与熔断：Hystrix
+
+服务链路追踪：Dapper
+
+服务网关、安全、消息
 
 ### 应用服务器知识
 
@@ -445,6 +465,10 @@ Jigsaw、Jshell、Reactive Streams
 
 局部变量类型推断、G1的并行Full GC、ThreadLocal握手机制
 
+#### Java 11
+
+ZGC、Epsilon、增强var、
+
 #### Spring 5
 
 响应式编程
@@ -465,9 +489,21 @@ Jigsaw、Jshell、Reactive Streams
 
 分析死锁、分析内存泄露
 
+#### dump分析及获取工具
+
+jstack、jstat、jmap、jhat、Arthas
+
 #### 自己编写各种outofmemory，stackoverflow程序
 
 HeapOutOfMemory、 Young OutOfMemory、MethodArea OutOfMemory、ConstantPool OutOfMemory、DirectMemory OutOfMemory、Stack OutOfMemory Stack OverFlow
+
+#### Arthas
+
+jvm相关、class/classloader相关、monitor/watch/trace相关、
+
+options、管道、后台异步任务
+
+文档：https://alibaba.github.io/arthas/advanced-use.html
 
 #### 常见问题解决思路
 
@@ -487,6 +523,12 @@ HeapOutOfMemory、 Young OutOfMemory、MethodArea OutOfMemory、ConstantPool Out
 
 如何判断是否存在内存泄露
 
+使用Arthas快速排查Spring Boot应用404/401问题
+
+使用Arthas排查线上应用日志打满问题
+
+利用Arthas排查Spring Boot应用NoSuchMethodError
+
 ### 编译原理知识
 
 #### 编译与反编译
@@ -495,19 +537,31 @@ HeapOutOfMemory、 Young OutOfMemory、MethodArea OutOfMemory、ConstantPool Out
 
 #### Java的反编译工具
 
+javap 、jad 、CRF
+
+#### 即时编译器
+
 #### 词法分析，语法分析（LL算法，递归下降算法，LR算法），语义分析，运行时环境，中间代码，代码生成，代码优化
 
 ### 操作系统知识
 
 #### Linux的常用命令
 
+#### 进程间通信
+
 #### 进程同步
+
+生产者消费者问题、哲学家就餐问题、读者写者问题
 
 #### 缓冲区溢出
 
 #### 分段和分页
 
 #### 虚拟内存与主存
+
+#### 虚拟内存管理
+
+#### 换页算法
 
 ### 数据库知识
 
@@ -517,9 +571,17 @@ HeapOutOfMemory、 Young OutOfMemory、MethodArea OutOfMemory、ConstantPool Out
 
 如何查看执行计划，如何根据执行计划进行SQL优化
 
+#### 索引
+
+Hash索引、B树索引（B+树、和B树、R树）
+
+普通索引、唯一索引
+
+覆盖索引、最左前缀原则、索引下推
+
 #### SQL优化
 
-#### 事务
+#### 数据库事务和隔离级别
 
 事务的隔离级别、事务能不能实现锁的功能
 
@@ -527,13 +589,23 @@ HeapOutOfMemory、 Young OutOfMemory、MethodArea OutOfMemory、ConstantPool Out
 
 行锁、表锁、使用数据库锁实现乐观锁、
 
+#### 连接
+
+内连接，左连接，右连接
+
 #### 数据库主备搭建
 
-#### binlog
+#### binlog 
+
+#### redolog
 
 #### 内存数据库
 
 h2
+
+#### 分库分表
+
+#### 读写分离
 
 #### 常用的nosql数据库
 
@@ -543,19 +615,37 @@ redis、memcached
 
 #### 性能调优
 
+#### 数据库连接池
+
 ### 数据结构与算法知识
 
 #### 简单的数据结构
 
 栈、队列、链表、数组、哈希表、
 
+栈和队列的相同和不同之处
+
+栈通常采用的两种存储结构
+
 #### 树
 
 二叉树、字典树、平衡树、排序树、B树、B+树、R树、多路树、红黑树
 
+#### 堆
+
+大根堆、小根堆
+
+#### 图
+
+有向图、无向图、拓扑
+
 #### 排序算法
 
-各种排序算法和时间复杂度 深度优先和广度优先搜索 全排列、贪心算法、KMP算法、hash算法、海量数据处理
+各种排序算法和时间复杂度 深度优先和广度优先搜索 
+
+全排列、贪心算法、KMP算法、hash算法、海量数据处理
+
+#### 两个栈实现队列，和两个队列实现栈
 
 ### 大数据知识
 
@@ -581,23 +671,29 @@ HDFS、MapReduce
 
 ### 网络安全知识
 
-#### 什么是XSS
+#### XSS
 
 XSS的防御
 
-#### 什么是CSRF
+#### CSRF
 
-#### 什么是注入攻击
+#### 注入攻击
 
 SQL注入、XML注入、CRLF注入
 
-#### 什么是文件上传漏洞
+#### 文件上传漏洞
 
 #### 加密与解密
 
+对称加密、非对称加密、哈希算法、加盐哈希算法
+
 MD5，SHA1、DES、AES、RSA、DSA
 
-#### 什么是DOS攻击和DDOS攻击
+彩虹表
+
+#### DDOS攻击
+
+DOS攻击、DDOS攻击
 
 memcached为什么可以导致DDos攻击、什么是反射型DDoS
 
@@ -621,6 +717,8 @@ memcached为什么可以导致DDos攻击、什么是反射型DDoS
 
 服务注册、服务发现，服务治理
 
+http://dubbo.apache.org/zh-cn/
+
 #### 分布式数据库
 
 怎样打造一个分布式数据库、什么时候需要分布式数据库、mycat、otter、HBase
@@ -632,6 +730,16 @@ mfs、fastdfs
 #### 分布式缓存
 
 缓存一致性、缓存命中率、缓存冗余
+
+#### 限流降级
+
+Hystrix、Sentinal
+
+#### 算法
+
+共识算法、Raft协议、Paxos 算法与 Raft 算法、拜占庭问题与算法
+
+2PC、3PC
 
 ### 微服务
 
@@ -675,6 +783,8 @@ CPU、内存、磁盘I/O、网络I/O等
 
 tomcat负载均衡、Nginx负载均衡
 
+四层负载均衡、七层负载均衡
+
 ### DNS
 
 DNS原理、DNS的设计
@@ -717,13 +827,31 @@ Shiro
 
 TensorFlow、DeepLearning4J
 
+### IoT
+
+### 量子计算
+
+### AR & VR
+
 ### 其他语言
 
 Groovy、Python、Go、NodeJs、Swift、Rust
 
 ## 六、 推荐书籍
 
-《深入理解Java虚拟机》 《Effective Java》 《深入分析Java Web技术内幕》 《大型网站技术架构》 《代码整洁之道》 《Head First设计模式》 《maven实战》 《区块链原理、设计与应用》 《Java并发编程实战》 《鸟哥的Linux私房菜》 《从Paxos到Zookeeper》 《架构即未来》
+《深入理解Java虚拟机》 
+《Effective Java》 
+《深入分析Java Web技术内幕》 
+《大型网站技术架构》 
+《代码整洁之道》 
+《架构整洁之道》 
+《Head First设计模式》 
+《maven实战》 
+《区块链原理、设计与应用》 
+《Java并发编程实战》 
+《鸟哥的Linux私房菜》 
+《从Paxos到Zookeeper》 
+《架构即未来》
 
 -------------
 
