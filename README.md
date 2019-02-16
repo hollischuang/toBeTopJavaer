@@ -112,7 +112,7 @@ switch对枚举的支持
 
 枚举的线程安全性问题
 
-#### Java IO&Java NIO，并学会使用
+#### IO
 
 字符流、字节流、输入流、输出流、
 
@@ -122,7 +122,11 @@ BIO、NIO和AIO的区别、三种IO的用法与原理、netty
 
 #### Java反射与javassist
 
-反射与工厂模式、 `java.lang.reflect.*`
+反射与工厂模式、 反射有什么作用
+
+Class类
+
+`java.lang.reflect.*`
 
 #### 动态代理
 
@@ -134,13 +138,15 @@ BIO、NIO和AIO的区别、三种IO的用法与原理、netty
 
 AOP
 
-#### Java序列化
+#### 序列化
 
 什么是序列化与反序列化、为什么序列化、序列化底层原理、序列化与单例模式、protobuf、为什么说序列化并不安全
 
 #### 注解
 
 元注解、自定义注解、Java中常用注解使用、注解与反射的结合
+
+Spring常用注解
 
 #### JMS
 
@@ -154,6 +160,12 @@ AOP
 
 泛型与继承、类型擦除、泛型中K T V E ？ object等的含义、泛型各种用法
 
+限定通配符和非限定通配符、上下界限定符extends 和 super
+
+List<Object>和原始类型List之间的区别? 
+
+List<?>和List<Object>之间的区别是什么?
+
 #### 单元测试
 
 junit、mock、mockito、内存数据库（h2）
@@ -166,7 +178,9 @@ junit、mock、mockito、内存数据库（h2）
 
 `commons.lang`, `commons.*...` `guava-libraries` `netty`
 
-#### 什么是API&SPI
+#### API&SPI
+
+API、API和SPI的关系和区别
 
 如何定义SPI、SPI的实现原理
 
@@ -178,13 +192,19 @@ Error和Exception
 
 异常链、try-with-resources
 
+finally和return的执行顺序
+
 #### 时间处理
 
 时区、冬令时和夏令时、时间戳、Java中时间API
 
+格林威治时间、CET,UTC,GMT,CST几种常见时间的含义和关系
+
 SimpleDateFormat的线程安全性问题
 
 Java 8中的时间处理
+
+如何在东八区的计算机上获取美国时间
 
 #### 编码方式
 
@@ -212,10 +232,17 @@ String、Integer、Long、Enum、BigDecimal、ThreadLocal、ClassLoader & URLCla
 
 #### 并发与并行
 
+什么是并发
 
-#### 什么是线程，与进程的区别
+什么是并行
+
+并发与并行的区别
+
+#### 线程
 
 线程的实现、线程的状态、优先级、线程调度、创建线程的多种方式、守护线程
+
+线程与进程的区别
 
 #### 线程池
 
@@ -225,7 +252,7 @@ String、Integer、Long、Enum、BigDecimal、ThreadLocal、ClassLoader & URLCla
 
 #### 线程安全
 
-死锁、死锁如何排查、Java线程调度、线程安全和内存模型的关系
+死锁、死锁如何排查、线程安全和内存模型的关系
 
 #### 锁
 
@@ -234,6 +261,10 @@ CAS、乐观锁与悲观锁、数据库相关锁机制、分布式锁、偏向�
 锁优化、锁消除、锁粗化、自旋锁、可重入锁、阻塞锁、死锁
 
 #### 死锁
+
+死锁的原因
+
+死锁的解决办法
 
 #### synchronized
 
@@ -279,7 +310,7 @@ Thread、Runnable、Callable、ReentrantLock、ReentrantReadWriteLock、Atomic*�
 
 class文件格式、运行时数据区：堆、栈、方法区、直接内存、运行时常量池、
 
-堆和栈区别、
+堆和栈区别
 
 Java中的对象一定在堆上分配吗？
 
@@ -315,6 +346,8 @@ oop-klass、对象头
 
 jps, jstack, jmap、jstat, jconsole, jinfo, jhat, javap, btrace、TProfiler
 
+Arthas
+
 ### 类加载机制
 
 classLoader、类加载过程、双亲委派（破坏双亲委派）、模块化（jboss modules、osgi、jigsaw）
@@ -345,17 +378,31 @@ JIT、JIT优化（逃逸分析、栈上分配、标量替换、锁优化）
 
 ### 设计模式
 
+设计模式的六大原则：
+
+开闭原则（Open Close Principle）、里氏代换原则（Liskov Substitution Principle）、依赖倒转原则（Dependence Inversion Principle）
+
+接口隔离原则（Interface Segregation Principle）、迪米特法则（最少知道原则）（Demeter Principle）、合成复用原则（Composite Reuse Principle）
+
 #### 了解23种设计模式
+
+创建型模式：单例模式、抽象工厂模式、建造者模式、工厂模式、原型模式。
+
+结构型模式：适配器模式、桥接模式、装饰模式、组合模式、外观模式、享元模式、代理模式。
+
+行为型模式：模版方法模式、命令模式、迭代器模式、观察者模式、中介者模式、备忘录模式、解释器模式（Interpreter模式）、状态模式、策略模式、职责链模式(责任链模式)、访问者模式。
 
 #### 会使用常用设计模式
 
-单例、策略、工厂、适配器、责任链。
+单例的七种写法：懒汉——线程不安全、懒汉——线程安全、饿汉、饿汉——变种、静态内部类、枚举、双重校验锁
+
+工厂模式、适配器模式、策略模式、模板方法模式、观察者模式、外观模式、代理模式等必会
+
+#### 不用synchronized和lock，实现线程安全的单例模式
 
 #### 实现AOP
 
 #### 实现IOC
-
-#### 不用synchronized和lock，实现线程安全的单例模式
 
 #### nio和reactor设计模式
 
@@ -365,7 +412,15 @@ JIT、JIT优化（逃逸分析、栈上分配、标量替换、锁优化）
 
 三次握手与四次关闭、流量控制和拥塞控制、OSI七层模型、tcp粘包与拆包
 
-#### http/1.0 http/1.1 http/2之前的区别
+#### http/1.0 http/1.1 http/2之间的区别
+
+http中 get和post区别
+
+常见的web请求返回的状态码
+
+404、302、301、500分别代表什么
+
+#### http/3
 
 #### Java RMI，Socket，HttpClient
 
@@ -375,8 +430,6 @@ cookie被禁用，如何实现session
 
 #### 用Java写一个简单的静态文件的HTTP服务器
 
-> 实现客户端缓存功能，支持返回304 实现可并发下载一个文件 使用线程池处理客户端请求 使用nio处理客户端请求 支持简单的rewrite规则 上述功能在实现的时候需要满足“开闭原则”
-
 #### 了解nginx和apache服务器的特性并搭建一个对应的服务器
 
 #### 用Java实现FTP、SMTP协议
@@ -385,31 +438,57 @@ cookie被禁用，如何实现session
 
 #### 什么是CDN？如果实现？
 
-#### 什么是DNS？
+#### DNS？
 
-DNS污染、DNS劫持
+什么是DNS 、记录类型:A记录、CNAME记录、AAAA记录等
+
+域名解析、根域名服务器
+
+DNS污染、DNS劫持、公共DNS：114 DNS、Google DNS、OpenDNS
 
 #### 反向代理
 
-正向代理、反向代理、反向代理服务器、
+正向代理、反向代理
+
+反向代理服务器
 
 ### 框架知识
 
-#### Servlet线程安全问题
+#### Servlet
 
-#### Servlet中的filter和listener
+生命周期
 
-#### Hibernate的缓存机制
+线程安全问题
 
-#### Hiberate的懒加载
+filter和listener
 
-#### Spring Bean的初始化
+web.xml中常用配置及作用
 
-#### Spring的AOP原理
+#### Hibernate
 
-#### 自己实现Spring的IOC
+什么是OR Mapping
+
+Hibernate的缓存机制
+
+Hibernate的懒加载
+
+Hibernate/Ibatis/MyBatis之间的区别
+
+#### Spring 
+
+Bean的初始化
+
+AOP原理
+
+实现Spring的IOC
+
+spring四种依赖注入方式
 
 #### Spring MVC
+
+什么是MVC
+
+Spring mvc与Struts mvc的区别
 
 #### Spring Boot
 
@@ -449,13 +528,19 @@ Spring Boot的starter原理，自己实现一个starter
 
 #### maven & gradle
 
+#### Intellij IDEA
+
+常用插件：Maven Helper 、FindBugs-IDEA、阿里巴巴代码规约检测、GsonFormat
+
+Lombok plugin、.ignore、Mybatis plugin
+
 ## 四、 高级篇
 
 ### 新技术
 
 #### Java 8
 
-lambda表达式、Stream API、
+lambda表达式、Stream API、时间API
 
 #### Java 9
 
@@ -474,6 +559,10 @@ ZGC、Epsilon、增强var、
 响应式编程
 
 #### Spring Boot 2.0
+
+### http/2
+
+### http/3
 
 ### 性能优化
 
@@ -641,9 +730,19 @@ redis、memcached
 
 #### 排序算法
 
-各种排序算法和时间复杂度 深度优先和广度优先搜索 
+稳定的排序：冒泡排序、插入排序、鸡尾酒排序、桶排序、计数排序、归并排序、原地归并排序、二叉排序树排序、鸽巢排序、基数排序、侏儒排序、图书馆排序、块排序
 
-全排列、贪心算法、KMP算法、hash算法、海量数据处理
+不稳定的排序：选择排序、希尔排序、Clover排序算法、梳排序、堆排序、平滑排序、快速排序、内省排序、耐心排序
+
+各种排序算法和时间复杂度 
+
+#### 深度优先和广度优先搜索 
+
+#### 全排列、贪心算法、KMP算法、hash算法
+
+#### 海量数据处理
+
+分治，hash映射，堆排序，双层桶划分，Bloom Filter，bitmap，数据库索引，mapreduce等。
 
 #### 两个栈实现队列，和两个队列实现栈
 
@@ -697,9 +796,9 @@ DOS攻击、DDOS攻击
 
 memcached为什么可以导致DDos攻击、什么是反射型DDoS
 
-#### SSL、TLS，HTTPS
+如何通过Hash碰撞进行DOS攻击
 
-#### 如何通过Hash碰撞进行DOS攻击
+#### SSL、TLS，HTTPS
 
 #### 用openssl签一个证书部署到apache或nginx
 
@@ -746,6 +845,8 @@ Hystrix、Sentinal
 SOA、康威定律
 
 #### ServiceMesh
+
+sidecar
 
 #### Docker & Kubernets
 
