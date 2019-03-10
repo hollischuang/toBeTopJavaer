@@ -32,7 +32,7 @@ JVM还支持哪些语言（Kotlin、Groovy、JRuby、Jython、Scala）
 
 值传递、引用传递
 
-为什么说Java中只有值传递
+[为什么说Java中只有值传递](/basic/java-basic/java-pass-by.md)
 
 #### 封装、继承、多态
 
