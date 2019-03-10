@@ -20,13 +20,13 @@
 
 面向对象、面向过程
 
-面向对象的三大基本特征和五大基本原则
+面向对象的三大基本特征和[五大基本原则](/basics/java-basic/principle.md)
 
 #### 平台无关性
 
 Java如何实现的平台无关
 
-JVM还支持哪些语言（Kotlin、Groovy、JRuby、Jython、Scala）
+[JVM还支持哪些语言（Kotlin、Groovy、JRuby、Jython、Scala）](/basics/java-basic/jvm-language.md)
 
 #### 值传递
 
