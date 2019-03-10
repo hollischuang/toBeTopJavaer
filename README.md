@@ -20,7 +20,7 @@
 
 面向对象、面向过程
 
-面向对象的三大基本特征和[五大基本原则](/basics/java-basic/principle.md)
+面向对象的[三大基本特征](/basics/java-basic/characteristics.md)和[五大基本原则](/basics/java-basic/principle.md)
 
 #### 平台无关性
 
@@ -36,13 +36,13 @@ Java如何实现的平台无关
 
 #### 封装、继承、多态
 
-什么是多态、方法重写与重载
+什么是多态、[方法重写与重载](/basics/java-basic/overloading-vs-overriding.md)
 
 Java的继承与实现
 
 构造函数与默认构造函数
 
-类变量、成员变量和局部变量
+[类变量、成员变量和局部变量](/basics/java-basic/variable.md)
 
 成员变量和方法作用域
 
