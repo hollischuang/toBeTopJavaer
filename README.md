@@ -58,15 +58,15 @@ Java的继承与实现
 
 #### 自动拆装箱
 
-什么是包装类型、什么是基本类型、什么是自动拆装箱
+[什么是包装类型、什么是基本类型、什么是自动拆装箱](/basics/java-basic/boxing-unboxing.md)
 
-Integer的缓存机制
+[Integer的缓存机制](/basics/java-basic/integer-cache.md)
 
 #### String
 
-字符串的不可变性
+[字符串的不可变性](/basics/java-basic/final-string.md)
 
-JDK 6和JDK 7中substring的原理及区别、
+[JDK 6和JDK 7中substring的原理及区别](/basics/java-basic/substring.md)
 
 replaceFirst、replaceAll、replace区别、
 
@@ -74,7 +74,7 @@ String对“+”的重载、字符串拼接的几种方式和区别
 
 String.valueOf和Integer.toString的区别、
 
-switch对String的支持
+[switch对String的支持](/basics/java-basic/switch-string.md)
 
 字符串池、常量池（运行时常量池、Class常量池）、intern
 
