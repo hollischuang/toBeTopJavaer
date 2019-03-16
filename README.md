@@ -40,6 +40,8 @@ Java如何实现的平台无关
 
 Java的继承与实现
 
+[Java的继承与组合](/basics/java-basic/inheritance-composition.md)
+
 构造函数与默认构造函数
 
 [类变量、成员变量和局部变量](/basics/java-basic/variable.md)
@@ -70,7 +72,9 @@ Java的继承与实现
 
 replaceFirst、replaceAll、replace区别、
 
-String对“+”的重载、字符串拼接的几种方式和区别
+String对“+”的重载
+
+[字符串拼接的几种方式和区别](/basics/java-basic/string-concat.md)
 
 String.valueOf和Integer.toString的区别、
 
@@ -84,11 +88,11 @@ transient、instanceof、volatile、synchronized、final、static、const 原理
 
 #### 集合类
 
-常用集合类的使用、ArrayList和LinkedList和Vector的区别 、SynchronizedList和Vector的区别、HashMap、HashTable、ConcurrentHashMap区别、
+常用集合类的使用、ArrayList和LinkedList和Vector的区别 、[SynchronizedList和Vector的区别](/basics/java-basic/synchronizedlist-vector.md)、HashMap、HashTable、ConcurrentHashMap区别、
 
 Set和List区别？Set如何保证元素不重复？
 
-Java 8中stream相关用法、apache集合处理工具类的使用、不同版本的JDK中HashMap的实现的区别以及原因
+[Java 8中stream相关用法](/basics/java-basic/stream.md)、apache集合处理工具类的使用、不同版本的JDK中HashMap的实现的区别以及原因
 
 Collection和Collections区别
 
@@ -108,7 +112,7 @@ Java枚举如何比较
 
 switch对枚举的支持
 
-枚举的序列化如何实现
+[枚举的序列化如何实现](/basics/java-basic/enum-serializable.md)
 
 枚举的线程安全性问题
 
@@ -158,7 +162,7 @@ Spring常用注解
 
 #### 泛型
 
-泛型与继承、类型擦除、泛型中K T V E ？ object等的含义、泛型各种用法
+泛型与继承、类型擦除、泛型中K T V E ？ [object等的含义](/basics/java-basic/k-t-v-e.md)、泛型各种用法
 
 限定通配符和非限定通配符、上下界限定符extends 和 super
 
@@ -268,7 +272,7 @@ CAS、乐观锁与悲观锁、数据库相关锁机制、分布式锁、偏向�
 
 #### synchronized
 
-synchronized是如何实现的？
+[synchronized是如何实现的？](/basics/java-basic/synchronized.md)
 
 synchronized和lock之间关系、不使用synchronized如何实现一个线程安全的单例
 
