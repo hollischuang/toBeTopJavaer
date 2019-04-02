@@ -51,13 +51,13 @@ Java中的整型主要包含`byte`、`short`、`int`和`long`这四种，表示�
 ### 超出范围怎么办
 
 上面说过了，整型中，每个类型都有一定的表示范围，但是，在程序中有些计算会导致超出表示范围，即溢出。如以下代码：
+```java
+    int i = Integer.MAX_VALUE;
+    int j = Integer.MAX_VALUE;
 
-        int i = Integer.MAX_VALUE;
-        int j = Integer.MAX_VALUE;
-    
-        int k = i + j;
-        System.out.println("i (" + i + ") + j (" + j + ") = k (" + k + ")");
-    
+    int k = i + j;
+    System.out.println("i (" + i + ") + j (" + j + ") = k (" + k + ")");
+```
 
 输出结果：i (2147483647) + j (2147483647) = k (-2)
 
@@ -99,9 +99,9 @@ Java语言是一个面向对象的语言，但是Java中的基本数据类型却
 反之，把包装类转换成基本数据类型的过程就是拆包装，英文对应于unboxing，中文翻译为拆箱。
 
 在Java SE5之前，要进行装箱，可以通过以下代码：
-
+```java
     Integer i = new Integer(10);
-    
+```
 
 ## 自动拆箱与自动装箱
 
@@ -110,10 +110,10 @@ Java语言是一个面向对象的语言，但是Java中的基本数据类型却
 自动装箱: 就是将基本数据类型自动转换成对应的包装类。
 
 自动拆箱：就是将包装类自动转换成对应的基本数据类型。
-
+```java
     Integer i =10;  //自动装箱
     int b= i;     //自动拆箱
-    
+```
 
 `Integer i=10` 可以替代 `Integer i = new Integer(10);`，这就是因为Java帮我们提供了自动装箱的功能，不需要开发者手动去new一个Integer对象。
 
@@ -122,20 +122,20 @@ Java语言是一个面向对象的语言，但是Java中的基本数据类型却
 既然Java提供了自动拆装箱的能力，那么，我们就来看一下，到底是什么原理，Java是如何实现的自动拆装箱功能。
 
 我们有以下自动拆装箱的代码：
-
+```java
     public static  void main(String[]args){
         Integer integer=1; //装箱
         int i=integer; //拆箱
     }
-    
+```
 
 对以上代码进行反编译后可以得到以下代码：
-
+```java
     public static  void main(String[]args){
         Integer integer=Integer.valueOf(1); 
         int i=integer.intValue(); 
     }
-    
+```
 
 从上面反编译后的代码可以看出，int的自动装箱都是通过`Integer.valueOf()`方法来实现的，Integer的自动拆箱都是通过`integer.intValue`来实现的。如果读者感兴趣，可以试着将八种类型都反编译一遍 ，你会发现以下规律：
 
@@ -150,89 +150,89 @@ Java语言是一个面向对象的语言，但是Java中的基本数据类型却
 ### 场景一、将基本数据类型放入集合类
 
 我们知道，Java中的集合类只能接收对象类型，那么以下代码为什么会不报错呢？
-
+```java
     List<Integer> li = new ArrayList<>();
     for (int i = 1; i < 50; i ++){
         li.add(i);
     }
-    
+```
 
 将上面代码进行反编译，可以得到以下代码：
-
+```java
     List<Integer> li = new ArrayList<>();
     for (int i = 1; i < 50; i += 2){
         li.add(Integer.valueOf(i));
     }
-    
+```
 
 以上，我们可以得出结论，当我们把基本数据类型放入集合类中的时候，会进行自动装箱。
 
 ### 场景二、包装类型和基本类型的大小比较
 
 有没有人想过，当我们对Integer对象与基本类型进行大小比较的时候，实际上比较的是什么内容呢？看以下代码：
-
-        Integer a=1;
-        System.out.println(a==1?"等于":"不等于");
-        Boolean bool=false;
-        System.out.println(bool?"真":"假");
-    
+```java
+    Integer a=1;
+    System.out.println(a==1?"等于":"不等于");
+    Boolean bool=false;
+    System.out.println(bool?"真":"假");
+```
 
 对以上代码进行反编译，得到以下代码：
-
-        Integer a=1;
-        System.out.println(a.intValue()==1?"等于":"不等于");
-        Boolean bool=false;
-        System.out.println(bool.booleanValue?"真":"假");
-    
+```java
+    Integer a=1;
+    System.out.println(a.intValue()==1?"等于":"不等于");
+    Boolean bool=false;
+    System.out.println(bool.booleanValue?"真":"假");
+```
 
 可以看到，包装类与基本数据类型进行比较运算，是先将包装类进行拆箱成基本数据类型，然后进行比较的。
 
 ### 场景三、包装类型的运算
 
 有没有人想过，当我们对Integer对象进行四则运算的时候，是如何进行的呢？看以下代码：
+```java
+    Integer i = 10;
+    Integer j = 20;
 
-        Integer i = 10;
-        Integer j = 20;
-    
-        System.out.println(i+j);
-    
+    System.out.println(i+j);
+``` 
 
 反编译后代码如下：
-
-        Integer i = Integer.valueOf(10);
-        Integer j = Integer.valueOf(20);
-        System.out.println(i.intValue() + j.intValue());
-    
+```java
+    Integer i = Integer.valueOf(10);
+    Integer j = Integer.valueOf(20);
+    System.out.println(i.intValue() + j.intValue());
+``` 
 
 我们发现，两个包装类型之间的运算，会被自动拆箱成基本类型进行。
 
 ### 场景四、三目运算符的使用
 
 这是很多人不知道的一个场景，作者也是一次线上的血淋淋的Bug发生后才了解到的一种案例。看一个简单的三目运算符的代码：
-
+```java
     boolean flag = true;
     Integer i = 0;
     int j = 1;
     int k = flag ? i : j;
-    
+```    
 
 很多人不知道，其实在`int k = flag ? i : j;`这一行，会发生自动拆箱。反编译后代码如下：
-
+```java
     boolean flag = true;
     Integer i = Integer.valueOf(0);
     int j = 1;
     int k = flag ? i.intValue() : j;
     System.out.println(k);
-    
+```
 
 这其实是三目运算符的语法规范。当第二，第三位操作数分别为基本类型和对象时，其中的对象就会拆箱为基本类型进行操作。
 
-因为例子中，`flag ? i : j;`片段中，第二段的i是一个包装类型的对象，而第三段的j是一个基本类型，所以会对包装类进行自动拆箱。如果这个时候i的值为`null`，那么久会发生NPE。（[自动拆箱导致空指针异常][1]）
+因为例子中，`flag ? i : j;`片段中，第二段的i是一个包装类型的对象，而第三段的j是一个基本类型，所以会对包装类进行自动拆箱。如果这个时候i的值为`null`，那么就会发生NPE。（[自动拆箱导致空指针异常][1]）
 
 ### 场景五、函数参数与返回值
 
 这个比较容易理解，直接上代码了：
-
+```java
     //自动拆箱
     public int getNum1(Integer num) {
      return num;
@@ -241,12 +241,12 @@ Java语言是一个面向对象的语言，但是Java中的基本数据类型却
     public Integer getNum2(int num) {
      return num;
     }
-    
+```
 
 ## 自动拆装箱与缓存
 
 Java SE的自动拆装箱还提供了一个和缓存有关的功能，我们先来看以下代码，猜测一下输出结果：
-
+```java
     public static void main(String... strings) {
     
         Integer integer1 = 3;
@@ -264,9 +264,8 @@ Java SE的自动拆装箱还提供了一个和缓存有关的功能，我们先�
             System.out.println("integer3 == integer4");
         else
             System.out.println("integer3 != integer4");
-    
     }
-    
+```
 
 我们普遍认为上面的两个判断的结果都是false。虽然比较的值是相等的，但是由于比较的是对象，而对象的引用不一样，所以会认为两个if判断都是false的。在Java中，==比较的是对象应用，而equals比较的是值。所以，在这个例子中，不同的对象有不同的引用，所以在进行比较的时候都将返回false。奇怪的是，这里两个类似的if条件判断返回不同的布尔值。
 
