@@ -51,11 +51,15 @@ Java的继承与实现
 
 #### 基本数据类型
 
-7种基本数据类型：整型、浮点型、布尔型、字符型
+[7种基本数据类型：整型、浮点型、布尔型、字符型](/basics/java-basic/basic-data-types.md)
 
-整型中byte、short、int、long的取值范围
+[整型中byte、short、int、long的取值范围](/basics/java-basic/integer-scope.md)
 
-什么是浮点型？什么是单精度和双精度？为什么不能用浮点型表示金额？
+[什么是浮点型？](/basics/java-basic/float.md)
+
+[什么是单精度和双精度？](/basics/java-basic/single-double-float.md)
+
+[为什么不能用浮点型表示金额？](float-amount.md)
 
 #### 自动拆装箱
 
