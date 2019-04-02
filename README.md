@@ -23,7 +23,7 @@
 
 #### 平台无关性
 
-[Java如何实现的平台无关](/basics/java-basic/platform-independent.md)
+[Java如何实现的平台无关性的](/basics/java-basic/platform-independent.md)
 
 [JVM还支持哪些语言（Kotlin、Groovy、JRuby、Jython、Scala）](/basics/java-basic/jvm-language.md)
 
