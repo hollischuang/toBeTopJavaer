@@ -12,7 +12,7 @@
 | v2.0 | 2019-02-19 | 结构调整，更适合从入门到精通；<br>进一步完善知识体系； <br>新技术补充；|
 
 欢迎关注[Java之道]公众号，最新内容均会在该公众号中同步发出！
-![](https://www.hollischuang.com/wp-content/uploads/2019/04/wechat.png)
+![](pics/wechat.png)
 
 
 ## 一、基础篇
