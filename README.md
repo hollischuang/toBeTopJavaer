@@ -11,6 +11,10 @@
 | v1.1 | 2018-03-12 | 增加新技术知识、完善知识体系 |
 | v2.0 | 2019-02-19 | 结构调整，更适合从入门到精通；<br>进一步完善知识体系； <br>新技术补充；|
 
+欢迎关注[Java之道]公众号，最新内容均会在该公众号中同步发出！
+![](https://www.hollischuang.com/wp-content/uploads/2019/04/wechat.png)
+
+
 ## 一、基础篇
 
 ### 面向对象
@@ -963,7 +967,7 @@ Groovy、Python、Go、NodeJs、Swift、Rust
 
 -------------
 
-扫描二维码，关注Hollis，所有内容第一时间在公众号更新
+扫描二维码，关注作者微信
 
 ![](http://www.hollischuang.com/wp-content/uploads/2018/10/%E4%BA%8C%E7%BB%B4%E7%A0%81%E7%BE%8E%E5%8C%96-1.png)
 
