@@ -63,7 +63,7 @@ Java的继承与实现
 
 [什么是单精度和双精度？](/basics/java-basic/single-double-float.md)
 
-[为什么不能用浮点型表示金额？](float-amount.md)
+[为什么不能用浮点型表示金额？](/basics/java-basic/float-amount.md)
 
 #### 自动拆装箱
 
@@ -79,7 +79,7 @@ Java的继承与实现
 
 replaceFirst、replaceAll、replace区别、
 
-String对“+”的重载
+[String对“+”的重载](/basics/java-basic/string-append.md)
 
 [字符串拼接的几种方式和区别](/basics/java-basic/string-concat.md)
 
