@@ -263,7 +263,7 @@ String、Integer、Long、Enum、BigDecimal、ThreadLocal、ClassLoader & URLCla
 
 #### 线程安全
 
-死锁、死锁如何排查、线程安全和内存模型的关系
+[死锁？](/basics/java-basic/deadlock-java-level.md)、死锁如何排查、线程安全和内存模型的关系
 
 #### 锁
 
