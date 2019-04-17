@@ -107,7 +107,7 @@ Arrays.asList获得的List使用时需要注意什么
 
 Enumeration和Iterator区别
 
-fail-fast 和 fail-safe
+[fail-fast 和 fail-safe](/basics/java-basic/fail-fast-vs-fail-safe.md)
 
 CopyOnWriteArrayList、ConcurrentSkipListMap
 
