@@ -11,51 +11,59 @@
 | v1.1 | 2018-03-12 | 增加新技术知识、完善知识体系 |
 | v2.0 | 2019-02-19 | 结构调整，更适合从入门到精通；<br>进一步完善知识体系； <br>新技术补充；|
 
+欢迎关注[Java之道]公众号，最新内容均会在该公众号中同步发出！
+![](pics/wechat.png)
+
+
 ## 一、基础篇
 
 ### 面向对象
 
 #### 什么是面向对象
 
-面向对象、面向过程
+[面向对象、面向过程](/basics/java-basic/object-oriented-vs-procedure-oriented.md)
 
-面向对象的[三大基本特征](/basics/java-basic/characteristics.md)和[五大基本原则](/basics/java-basic/principle.md)
+[面向对象的三大基本特征](/basics/java-basic/characteristics.md)和[五大基本原则](/basics/java-basic/principle.md)
 
 #### 平台无关性
 
-Java如何实现的平台无关
+[Java如何实现的平台无关性的](/basics/java-basic/platform-independent.md)
 
 [JVM还支持哪些语言（Kotlin、Groovy、JRuby、Jython、Scala）](/basics/java-basic/jvm-language.md)
 
 #### 值传递
 
-值传递、引用传递
+[值传递、引用传递](/basics/java-basic/java-pass-by.md)
 
 [为什么说Java中只有值传递](/basics/java-basic/java-pass-by.md)
 
 #### 封装、继承、多态
 
-什么是多态、[方法重写与重载](/basics/java-basic/overloading-vs-overriding.md)
+[什么是多态](/basics/java-basic/polymorphism.md)、[方法重写与重载](/basics/java-basic/overloading-vs-overriding.md)
 
 Java的继承与实现
 
 [Java的继承与组合](/basics/java-basic/inheritance-composition.md)
 
-构造函数与默认构造函数
+[构造函数与默认构造函数](/basics/java-basic/constructor.md)
 
 [类变量、成员变量和局部变量](/basics/java-basic/variable.md)
 
-成员变量和方法作用域
+[成员变量和方法作用域](/basics/java-basic/scope.md)
 
 ### Java基础知识
 
 #### 基本数据类型
 
-7种基本数据类型：整型、浮点型、布尔型、字符型
+[7种基本数据类型：整型、浮点型、布尔型、字符型](/basics/java-basic/basic-data-types.md)
 
-整型中byte、short、int、long的取值范围
+[整型中byte、short、int、long的取值范围](/basics/java-basic/integer-scope.md)
 
-什么是浮点型？什么是单精度和双精度？为什么不能用浮点型表示金额？
+[什么是浮点型？](/basics/java-basic/float.md)
+
+[什么是单精度和双精度？](/basics/java-basic/single-double-float.md)
+
+[为什么不能用浮点型表示金额？](/basics/java-basic/float-amount.md)
 
 #### 自动拆装箱
 
@@ -71,7 +79,7 @@ Java的继承与实现
 
 replaceFirst、replaceAll、replace区别、
 
-String对“+”的重载
+[String对“+”的重载](/basics/java-basic/string-append.md)
 
 [字符串拼接的几种方式和区别](/basics/java-basic/string-concat.md)
 
@@ -99,7 +107,7 @@ Arrays.asList获得的List使用时需要注意什么
 
 Enumeration和Iterator区别
 
-fail-fast 和 fail-safe
+[fail-fast 和 fail-safe](/basics/java-basic/fail-fast-vs-fail-safe.md)
 
 CopyOnWriteArrayList、ConcurrentSkipListMap
 
@@ -255,7 +263,7 @@ String、Integer、Long、Enum、BigDecimal、ThreadLocal、ClassLoader & URLCla
 
 #### 线程安全
 
-死锁、死锁如何排查、线程安全和内存模型的关系
+[死锁？](/basics/java-basic/deadlock-java-level.md)、死锁如何排查、线程安全和内存模型的关系
 
 #### 锁
 
@@ -959,7 +967,7 @@ Groovy、Python、Go、NodeJs、Swift、Rust
 
 -------------
 
-扫描二维码，关注Hollis，所有内容第一时间在公众号更新
+扫描二维码，关注作者微信
 
 ![](http://www.hollischuang.com/wp-content/uploads/2018/10/%E4%BA%8C%E7%BB%B4%E7%A0%81%E7%BE%8E%E5%8C%96-1.png)
 
