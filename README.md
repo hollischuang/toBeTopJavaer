@@ -83,7 +83,7 @@ replaceFirst、replaceAll、replace区别、
 
 [字符串拼接的几种方式和区别](/basics/java-basic/string-concat.md)
 
-String.valueOf和Integer.toString的区别、
+[String.valueOf和Integer.toString的区别](/basics/java-basic/value-of-vs-to-string.md)
 
 [switch对String的支持](/basics/java-basic/switch-string.md)
 
@@ -95,21 +95,35 @@ transient、instanceof、volatile、synchronized、final、static、const 原理
 
 #### 集合类
 
-常用集合类的使用、ArrayList和LinkedList和Vector的区别 、[SynchronizedList和Vector的区别](/basics/java-basic/synchronizedlist-vector.md)、HashMap、HashTable、ConcurrentHashMap区别、
+常用集合类的使用
 
-Set和List区别？Set如何保证元素不重复？
+[ArrayList和LinkedList和Vector的区别](/basics/java-basic/arraylist-vs-linkedlist-vs-vector.md) 
 
-[Java 8中stream相关用法](/basics/java-basic/stream.md)、apache集合处理工具类的使用、不同版本的JDK中HashMap的实现的区别以及原因
+[SynchronizedList和Vector的区别](/basics/java-basic/synchronizedlist-vector.md)、
 
-Collection和Collections区别
+[HashMap、HashTable、ConcurrentHashMap区别](/basics/java-basic/HashMap-HashTable-ConcurrentHashMap.md)
 
-Arrays.asList获得的List使用时需要注意什么
+[Set和List区别？](/basics/java-basic/set-vs-list.md)
 
-Enumeration和Iterator区别
+[Set如何保证元素不重复?](/basics/java-basic/set-repetition.md)
+
+[Java 8中stream相关用法](/basics/java-basic/stream.md)、
+
+apache集合处理工具类的使用、
+
+不同版本的JDK中HashMap的实现的区别以及原因
+
+[Collection和Collections区别](/basics/java-basic/Collection-vs-Collections.md)
+
+[Arrays.asList获得的List使用时需要注意什么](/basics/java-basic/Arrays-asList.md)
+
+[Enumeration和Iterator区别](/basics/java-basic/Enumeration-vs-Iterator.md)
 
 [fail-fast 和 fail-safe](/basics/java-basic/fail-fast-vs-fail-safe.md)
 
-CopyOnWriteArrayList、ConcurrentSkipListMap
+[CopyOnWriteArrayList](/basics/java-basic/CopyOnWriteArrayList.md)
+
+[ConcurrentSkipListMap](/basics/java-basic/ConcurrentSkipListMap.md)
 
 #### 枚举
 
