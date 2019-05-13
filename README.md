@@ -129,15 +129,19 @@ apache集合处理工具类的使用、
 
 #### 枚举
 
-枚举的用法、枚举的实现、枚举与单例、Enum类
+[枚举的用法](/basics/java-basic/enum-usage.md)
 
-Java枚举如何比较
+[枚举的实现](/basics/java-basic/enum-impl.md)
 
-switch对枚举的支持
+[枚举与单例](/basics/java-basic/enum-singleton.md)、Enum类
+
+[Java枚举如何比较](/basics/java-basic/enum-compare.md)
+
+[switch对枚举的支持](/basics/java-basic/enum-switch.md)
 
 [枚举的序列化如何实现](/basics/java-basic/enum-serializable.md)
 
-枚举的线程安全性问题
+[枚举的线程安全性问题](/basics/java-basic/enum-thread-safe.md)
 
 #### IO
 
