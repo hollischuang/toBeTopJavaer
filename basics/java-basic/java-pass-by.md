@@ -24,15 +24,16 @@
 
 简单举个例子：
 
+```
 public static void main(String[] args) {
-ParamTest pt = new ParamTest();
-pt.sout("Hollis");//实际参数为 Hollis
+  ParamTest pt = new ParamTest();
+  pt.sout("Hollis");//实际参数为 Hollis
 }
 
 public void sout(String name) { //形式参数为 name
-System.out.println(name);
+  System.out.println(name);
 }
-
+```
 
 实际参数是调用有参方法的时候真正传递的内容，而形式参数是用于接收实参内容的参数。
 
@@ -45,76 +46,77 @@ System.out.println(name);
 > 引用传递（pass by reference）是指在调用函数时将实际参数的地址直接传递到函数中，那么在函数中对参数所进行的修改，将影响到实际参数。
 
 有了上面的概念，然后大家就可以写代码实践了，来看看Java中到底是值传递还是引用传递 ，于是，最简单的一段代码出来了：
-
+```
 public static void main(String[] args) {
-ParamTest pt = new ParamTest();
+  ParamTest pt = new ParamTest();
 
-int i = 10;
-pt.pass(10);
-System.out.println("print in main , i is " + i);
+  int i = 10;
+  pt.pass(10);
+  System.out.println("print in main , i is " + i);
 }
 
 public void pass(int j) {
-j = 20;
-System.out.println("print in pass , j is " + j);
+  j = 20;
+  System.out.println("print in pass , j is " + j);
 }
-
+```
 
 上面的代码中，我们在pass方法中修改了参数j的值，然后分别在pass方法和main方法中打印参数的值。输出结果如下：
 
+```
 print in pass , j is 20
 print in main , i is 10
-
+```
 
 可见，pass方法内部对name的值的修改并没有改变实际参数i的值。那么，按照上面的定义，有人得到结论：Java的方法传递是值传递。
 
 但是，很快就有人提出质疑了（哈哈，所以，不要轻易下结论咯。）。然后，他们会搬出以下代码：
-
+```
 public static void main(String[] args) {
-ParamTest pt = new ParamTest();
+  ParamTest pt = new ParamTest();
 
-User hollis = new User();
-hollis.setName("Hollis");
-hollis.setGender("Male");
-pt.pass(hollis);
-System.out.println("print in main , user is " + hollis);
+  User hollis = new User();
+  hollis.setName("Hollis");
+  hollis.setGender("Male");
+  pt.pass(hollis);
+  System.out.println("print in main , user is " + hollis);
 }
 
 public void pass(User user) {
-user.setName("hollischuang");
-System.out.println("print in pass , user is " + user);
+  user.setName("hollischuang");
+  System.out.println("print in pass , user is " + user);
 }
-
+```
 
 同样是一个pass方法，同样是在pass方法内修改参数的值。输出结果如下：
-
+```
 print in pass , user is User{name='hollischuang', gender='Male'}
 print in main , user is User{name='hollischuang', gender='Male'}
-
+```
 
 经过pass方法执行后，实参的值竟然被改变了，那按照上面的引用传递的定义，实际参数的值被改变了，这不就是引用传递了么。于是，根据上面的两段代码，有人得出一个新的结论：Java的方法中，在传递普通类型的时候是值传递，在传递对象类型的时候是引用传递。
 
 但是，这种表述仍然是错误的。不信你看下面这个参数类型为对象的参数传递：
-
+```
 public static void main(String[] args) {
-ParamTest pt = new ParamTest();
+  ParamTest pt = new ParamTest();
 
-String name = "Hollis";
-pt.pass(name);
-System.out.println("print in main , name is " + name);
+  String name = "Hollis";
+  pt.pass(name);
+  System.out.println("print in main , name is " + name);
 }
 
 public void pass(String name) {
-name = "hollischuang";
-System.out.println("print in pass , name is " + name);
+  name = "hollischuang";
+  System.out.println("print in pass , name is " + name);
 }
-
+```
 
 上面的代码输出结果为
-
+```
 print in pass , name is hollischuang
 print in main , name is Hollis
-
+```
 
 这又作何解释呢？同样传递了一个对象，但是原始参数的值并没有被修改，难道传递对象又变成值传递了？
 
@@ -143,30 +145,30 @@ print in main , name is Hollis
 但是，不管上面那种情况，你的朋友拿着你给他的钥匙，进到你的家里，把你家的电视砸了。那你说你会不会受到影响？而我们在pass方法中，改变user对象的name属性的值的时候，不就是在“砸电视”么。
 
 还拿上面的一个例子来举例，我们`真正的改变参数`，看看会发生什么？
-
+```
 public static void main(String[] args) {
-ParamTest pt = new ParamTest();
+  ParamTest pt = new ParamTest();
 
-User hollis = new User();
-hollis.setName("Hollis");
-hollis.setGender("Male");
-pt.pass(hollis);
-System.out.println("print in main , user is " + hollis);
+  User hollis = new User();
+  hollis.setName("Hollis");
+  hollis.setGender("Male");
+  pt.pass(hollis);
+  System.out.println("print in main , user is " + hollis);
 }
 
 public void pass(User user) {
-user = new User();
-user.setName("hollischuang");
-user.setGender("Male");
-System.out.println("print in pass , user is " + user);
+  user = new User();
+  user.setName("hollischuang");
+  user.setGender("Male");
+  System.out.println("print in pass , user is " + user);
 }
-
+```
 
 上面的代码中，我们在pass方法中，改变了user对象，输出结果如下：
-
+```
 print in pass , user is User{name='hollischuang', gender='Male'}
 print in main , user is User{name='Hollis', gender='Male'}
-
+```
 
 我们来画一张图，看一下整个过程中发生了什么，然后我再告诉你，为啥Java中只有值传递。
 
