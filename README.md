@@ -145,29 +145,29 @@ apache集合处理工具类的使用、
 
 #### IO
 
-字符流、字节流、输入流、输出流、
+[字符流、字节流](/basics/java-basic/byte-stream-vs-character-stream.md)、[输入流、输出流](/basics/java-basic/input-stream-vs-output-stream.md)
 
-同步、异步、阻塞、非阻塞、Linux 5种IO模型
+[同步、异步](/basics/java-basic/synchronized-vs-asynchronization.md)、[阻塞、非阻塞](/basics/java-basic/block-vs-non-blocking.md)、[Linux 5种IO模型](/basics/java-basic/linux-io.md)
 
-BIO、NIO和AIO的区别、三种IO的用法与原理、netty
+[BIO、NIO和AIO的区别、三种IO的用法与原理](/basics/java-basic/bio-vs-nio-vs-aio.md)、netty
 
 #### Java反射与javassist
 
-反射与工厂模式、 反射有什么作用
+[反射](/basics/java-basic/reflection.md)与工厂模式、 [反射有什么作用](/basics/java-basic/usage-of-reflection.md)
 
-Class类
+[Class类](/basics/java-basic/Class.md)
 
 `java.lang.reflect.*`
 
 #### 动态代理
 
-静态代理、动态代理
+[静态代理](/basics/java-basic/static-proxy.md)、[动态代理](/basics/java-basic/dynamic-proxy.md)
 
-动态代理和反射的关系
+[动态代理和反射的关系](/basics/java-basic/dynamic-proxy-vs-reflection.md)
 
-动态代理的几种实现方式
+[动态代理的几种实现方式](/basics/java-basic/dynamic-proxy-implementation.md)
 
-AOP
+[AOP](/basics/java-basic/aop-vs-proxy.md)
 
 #### 序列化
 
