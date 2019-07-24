@@ -1,4 +1,4 @@
-# 为什么说Java中只有值传递
+﻿# 为什么说Java中只有值传递
 
 对于初学者来说，要想把这个问题回答正确，是比较难的。在第二天整理答案的时候，我发现我竟然无法通过简单的语言把这个事情描述的很容易理解，遗憾的是，我也没有在网上找到哪篇文章可以把这个事情讲解的通俗易懂。所以，就有了我写这篇文章的初衷。这篇文章中，我从什么是方法的实际参数和形式参数开始，给你讲解为什么说Java中只有值传递。
 
@@ -191,6 +191,36 @@ print in main , user is User{name='Hollis', gender='Male'}
 那么，既然这样，为啥上面同样是传递对象，传递的String对象和User对象的表现结果不一样呢？我们在pass方法中使用`name = "hollischuang";`试着去更改name的值，阴差阳错的直接改变了name的引用的地址。因为这段代码，会new一个String，在把引用交给name，即等价于`name = new String("hollischuang");`。而原来的那个"Hollis"字符串还是由实参持有着的，所以，并没有修改到实际参数的值。
 
 [<img src="http://www.hollischuang.com/wp-content/uploads/2018/04/pass3.png" alt="pass3" width="515" height="399" class="aligncenter size-full wp-image-2311" />][6]
+
+最后我们在来看一个例子，先定义两个User对象a和b，再利用swap方法交换这两个对象的引用。你可以先推测一下最后的输出结果。
+```
+public static void main(String[] args) {
+  User a = new User("Alice",18);
+  User b = new User("Bob",23);
+  swap(a,b);
+  
+  System.out.println("print in main , User a is " + a.getName());
+  System.out.println("print in main , User b is " + b.getName());
+}
+
+public void swap(User x,User y) {
+  User temp = x;
+  x=y;
+  y=temp;
+  
+  System.out.println("print in swap , User x is " + x.getName());
+  System.out.println("print in swap , User y is " + y.getName());
+  
+}
+```
+
+swap方法的参数x和参数y被初始化两个引用对象的拷贝，这个方法交换的是这两个拷贝，而对象a和b的引用并没有互相交换。就比如你把钥匙复制一般给路人甲，小明把钥匙复制给路人乙，然后路人甲和路人乙交换钥匙。最后你手上的钥匙还是你自己家里的钥匙，小明的钥匙还是小明家的钥匙，并没有因为路人们的交换，影响到你和小明。
+```
+print in swap , User x is Bob
+print in swap , User y is Alice
+print in main , User a is Alice
+print in main , User b is Bob
+```
 
 **所以说，Java中其实还是值传递的，只不过对于对象参数，值的内容是对象的引用。**
 
