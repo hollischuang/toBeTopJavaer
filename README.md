@@ -175,9 +175,11 @@ apache集合处理工具类的使用、
 
 #### 注解
 
-元注解、自定义注解、Java中常用注解使用、注解与反射的结合
+[元注解](/basics/java-basic/meta-annotation.md)、[自定义注解](/basics/java-basic/custom-annotation.md)、Java中常用注解使用、注解与反射的结合
 
-Spring常用注解
+[如何自定义一个注解？](/basics/java-basic/create-annotation.md)
+
+[Spring常用注解](/basics/java-basic/annotation-in-spring.md)
 
 #### JMS
 
@@ -193,9 +195,9 @@ Spring常用注解
 
 限定通配符和非限定通配符、上下界限定符extends 和 super
 
-List<Object>和原始类型List之间的区别? 
+[List<Object>和原始类型List之间的区别?](/basics/java-basic/genericity-list.md)
 
-List<?>和List<Object>之间的区别是什么?
+[List<?>和List<Object>之间的区别是什么?](/basics/java-basic/genericity-list-wildcard.md)
 
 #### 单元测试
 
