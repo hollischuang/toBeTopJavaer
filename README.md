@@ -309,7 +309,7 @@ synchronized和原子性、可见性和有序性之间的关系
 
 #### volatile
 
-happens-before、内存屏障、编译器指令重排和CPU指令重
+happens-before、内存屏障、编译器指令重排和CPU指令重排
 
 volatile的实现原理
 
