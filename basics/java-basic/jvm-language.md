@@ -8,7 +8,7 @@
 
 经常使用IDE的开发者可能会发现，当我们在Intelij IDEA中，鼠标右键想要创建Java类的时候，IDE还会提示创建其他类型的文件，这就是IDE默认支持的一些可以运行在JVM上面的语言，没有提示的，可以通过插件来支持。
 
-<img src="https://www.hollischuang.com/wp-content/uploads/2018/11/languages.png" alt="" width="1102" height="372" class="aligncenter size-full wp-image-2968" />
+<img src="https://www.hollischuang.com/wp-content/uploads/2018/11/languages.png" />
 
 目前，可以直接在JVM上运行的语言有很多，今天介绍其中比较重要的九种。每种语言通过一段『HelloWorld』代码进行演示，看看不同语言的语法有何不同。
 
