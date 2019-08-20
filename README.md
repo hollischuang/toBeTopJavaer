@@ -171,13 +171,15 @@ apache集合处理工具类的使用、
 
 #### 序列化
 
-什么是序列化与反序列化、为什么序列化、序列化底层原理、序列化与单例模式、protobuf、为什么说序列化并不安全
+[什么是序列化与反序列化](/basics/java-basic/serialize.md)、为什么序列化、[序列化底层原理](/basics/java-basic/serialize-principle.md)、[序列化与单例模式](/basics/java-basic/serialize-singleton.md)、protobuf、为什么说序列化并不安全
 
 #### 注解
 
-元注解、自定义注解、Java中常用注解使用、注解与反射的结合
+[元注解](/basics/java-basic/meta-annotation.md)、[自定义注解](/basics/java-basic/custom-annotation.md)、Java中常用注解使用、注解与反射的结合
 
-Spring常用注解
+[如何自定义一个注解？](/basics/java-basic/create-annotation.md)
+
+[Spring常用注解](/basics/java-basic/annotation-in-spring.md)
 
 #### JMS
 
@@ -189,13 +191,13 @@ Spring常用注解
 
 #### 泛型
 
-泛型与继承、类型擦除、泛型中K T V E ？ [object等的含义](/basics/java-basic/k-t-v-e.md)、泛型各种用法
+泛型与继承、类型擦除、[泛型中K T V E ？ object等的含义](/basics/java-basic/k-t-v-e.md)、泛型各种用法
 
 限定通配符和非限定通配符、上下界限定符extends 和 super
 
-List<Object>和原始类型List之间的区别? 
+[List<Object>和原始类型List之间的区别?](/basics/java-basic/genericity-list.md)
 
-List<?>和List<Object>之间的区别是什么?
+[List<?>和List<Object>之间的区别是什么?](/basics/java-basic/genericity-list-wildcard.md)
 
 #### 单元测试
 
@@ -211,9 +213,9 @@ junit、mock、mockito、内存数据库（h2）
 
 #### API&SPI
 
-API、API和SPI的关系和区别
+API、[API和SPI的关系和区别](/basics/java-basic/api-vs-spi.md)
 
-如何定义SPI、SPI的实现原理
+[如何定义SPI](/basics/java-basic/create-spi.md)、[SPI的实现原理](/basics/java-basic/spi-principle.md)
 
 #### 异常
 
@@ -307,7 +309,7 @@ synchronized和原子性、可见性和有序性之间的关系
 
 #### volatile
 
-happens-before、内存屏障、编译器指令重排和CPU指令重
+happens-before、内存屏障、编译器指令重排和CPU指令重排
 
 volatile的实现原理
 
