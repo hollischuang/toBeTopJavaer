@@ -51,7 +51,7 @@ public static void main(String[] args) {
   ParamTest pt = new ParamTest();
 
   int i = 10;
-  pt.pass(10);
+  pt.pass(i);
   System.out.println("print in main , i is " + i);
 }
 

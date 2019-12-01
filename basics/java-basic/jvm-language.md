@@ -8,7 +8,7 @@
 
 经常使用IDE的开发者可能会发现，当我们在Intelij IDEA中，鼠标右键想要创建Java类的时候，IDE还会提示创建其他类型的文件，这就是IDE默认支持的一些可以运行在JVM上面的语言，没有提示的，可以通过插件来支持。
 
-<img src="https://www.hollischuang.com/wp-content/uploads/2018/11/languages.png" alt="" width="1102" height="372" class="aligncenter size-full wp-image-2968" />
+<img src="https://www.hollischuang.com/wp-content/uploads/2018/11/languages.png" />
 
 目前，可以直接在JVM上运行的语言有很多，今天介绍其中比较重要的九种。每种语言通过一段『HelloWorld』代码进行演示，看看不同语言的语法有何不同。
 
@@ -18,10 +18,11 @@ Kotlin是一种在Java虚拟机上运行的静态类型编程语言，它也可�
 
 #### Hello World In Kotlin
 
-    fun main(args: Array<String>) {
-        println("Hello, world!")
-    }
-    
+```kotlin
+fun main(args: Array<String>) {
+    println("Hello, world!")
+}
+```
 
 ### Groovy
 
@@ -31,10 +32,11 @@ Apache的Groovy是Java平台上设计的面向对象编程语言。它的语法�
 
 #### Hello World In Groovy
 
-    static void main(String[] args) {
-        println('Hello, world!');
-    }
-    
+```groovy
+static void main(String[] args) {
+    println('Hello, world!');
+}
+```
 
 ### Scala
 
@@ -44,12 +46,13 @@ Scala经常被我们描述为多模式的编程语言，因为它混合了来自
 
 #### Hello World In Scala
 
-    object HelloWorld {  
-        def main(args: Array[String]) {  
-           System.out.println("Hello, world!");  
-        }  
-     } 
-    
+```scala
+object HelloWorld {
+    def main(args: Array[String]) {
+       System.out.println("Hello, world!");
+    }
+ }
+```
 
 ### Jruby
 
@@ -57,8 +60,9 @@ JRuby是用来桥接Java与Ruby的，它是使用比Groovy更加简短的语法�
 
 #### Hello World In Jruby
 
-    "puts 'Hello, world!'"
-    
+```ruby
+puts 'Hello, world!'
+```
 
 ### Jython
 
@@ -66,8 +70,9 @@ Jython，是一个用Java语言写的Python解释器。Jython能够用Python语�
 
 #### Hello World In Jython
 
-    print "Hello, world!"
-    
+```py
+print "Hello, world!"
+```
 
 ### Fantom
 
@@ -77,11 +82,11 @@ Fantom是与Groovy以及JRuby差不多的一样面向对 象的编程语言，�
 
 #### Hello World In Fantom
 
-    class Hello
-    {
-      static Void main() { echo("Hello, world!") }
-    }
-    
+```fantom
+class Hello {
+    static Void main() { echo("Hello, world!") }
+}
+```
 
 ### Clojure
 
@@ -91,9 +96,10 @@ Clojure是Lisp编程语言在Java平台上的现代、函数式及动态方言�
 
 #### Hello World In Clojure
 
-    (defn -main [& args]
-        (println "Hello, World!"))
-    
+```clojure
+(defn -main [& args]
+    (println "Hello, World!"))
+```
 
 ### Rhino
 
@@ -103,8 +109,9 @@ Rhino的特点是为JavaScript加了个壳，然后嵌入到Java中，这样能�
 
 #### Hello World In Rhino
 
-     print('Hello, world!')
-    
+```js
+print('Hello, world!')
+```
 
 ### Ceylon
 
@@ -112,13 +119,14 @@ Ceylon是一种面向对象，强烈静态类型的编程语言，强调不变�
 
 #### Hello World In Ceylon
 
-     shared void run() {
-        print("Hello, world!");
-    }
-    
+```ceylon
+shared void run() {
+    print("Hello, world!");
+}
+```
 
 ### 总结
 
 好啦，以上就是目前主流的可以在JVM上面运行的9种语言。加上Java正好10种。如果你是一个Java开发，那么有必要掌握以上9中的一种，这样可以在一些有特殊需求的场景中有更多的选择。推荐在Groovy、Scala、Kotlin中选一个。
 
- [1]: https://www.hollischuang.com/archives/2322
+[1]: https://www.hollischuang.com/archives/2322
