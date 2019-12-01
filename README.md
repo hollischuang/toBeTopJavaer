@@ -233,7 +233,7 @@ finally和return的执行顺序
 
 格林威治时间、CET,UTC,GMT,CST几种常见时间的含义和关系
 
-SimpleDateFormat的线程安全性问题
+[SimpleDateFormat的线程安全性问题](/basics/java-basic/simpledateformat-thread-safe.md)
 
 Java 8中的时间处理
 
@@ -253,9 +253,9 @@ URL编解码、Big Endian和Little Endian
 
 #### 语法糖
 
-Java中语法糖原理、解语法糖
+[Java中语法糖原理、解语法糖](/basics/java-basic/syntactic-sugar.md)
 
-语法糖：switch 支持 String 与枚举、泛型、自动装箱与拆箱、方法变长参数、枚举、内部类、条件编译、 断言、数值字面量、for-each、try-with-resource、Lambda表达式、
+[语法糖：switch 支持 String 与枚举、泛型、自动装箱与拆箱、方法变长参数、枚举、内部类、条件编译、 断言、数值字面量、for-each、try-with-resource、Lambda表达式](/basics/java-basic/syntactic-sugar.md)
 
 ### 阅读源代码
 
@@ -345,7 +345,7 @@ class文件格式、运行时数据区：堆、栈、方法区、直接内存、
 
 堆和栈区别
 
-Java中的对象一定在堆上分配吗？
+[Java中的对象一定在堆上分配吗？](/basics/jvm/stack-alloc.md)
 
 #### Java内存模型
 
