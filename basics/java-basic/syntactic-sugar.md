@@ -27,7 +27,7 @@ Java 中最常用的语法糖主要有泛型、变长参数、条件编译、自
 
 前面提到过，从Java 7 开始，Java语言中的语法糖在逐渐丰富，其中一个比较重要的就是Java 7中`switch`开始支持`String`。
 
-在开始coding之前先科普下，Java中的`swith`自身原本就支持基本类型。比如`int`、`char`等。对于`int`类型，直接进行数值的比较。对于`char`类型则是比较其ascii码。所以，对于编译器来说，`switch`中其实只能使用整型，任何类型的比较都要转换成整型。比如`byte`。`short`，`char`(ackii码是整型)以及`int`。
+在开始coding之前先科普下，Java中的`switch`自身原本就支持基本类型。比如`int`、`char`等。对于`int`类型，直接进行数值的比较。对于`char`类型则是比较其ascii码。所以，对于编译器来说，`switch`中其实只能使用整型，任何类型的比较都要转换成整型。比如`byte`。`short`，`char`(ackii码是整型)以及`int`。
 
 那么接下来看下`switch`对`String`得支持，有以下代码：
 
