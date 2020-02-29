@@ -229,9 +229,9 @@ finally和return的执行顺序
 
 #### 时间处理
 
-时区、冬令时和夏令时、时间戳、Java中时间API
+[时区](/basics/java-basic/time-zone.md)、[冬令时和夏令时](/basics/java-basic/StandardTime-vs-daylightSavingTime.md)、[时间戳](/basics/java-basic/timestamp.md)、Java中时间API
 
-格林威治时间、CET,UTC,GMT,CST几种常见时间的含义和关系
+[格林威治时间](/basics/java-basic/GMT.md)、[CET,UTC,GMT,CST几种常见时间的含义和关系](/basics/java-basic/CET-UTC-GMT-CST.md)
 
 [SimpleDateFormat的线程安全性问题](/basics/java-basic/simpledateformat-thread-safe.md)
 
@@ -241,13 +241,17 @@ Java 8中的时间处理
 
 #### 编码方式
 
-Unicode、有了Unicode为啥还需要UTF-8
+什么是ASCII？
 
-GBK、GB2312、GB18030之间的区别
+[Unicode](/basics/java-basic/UNICODE.md)、[有了Unicode为啥还需要UTF-8](/basics/java-basic/why-utf8.md)
 
-UTF8、UTF16、UTF32区别
+[UTF8、UTF16、UTF32区别](/basics/java-basic/UTF8-UTF16-UTF32.md)
 
-URL编解码、Big Endian和Little Endian
+有了UTF8为什么还需要GBK？
+
+[GBK、GB2312、GB18030之间的区别](/basics/java-basic/gbk-gb2312-gb18030.md)
+
+[URL编解码](/basics/java-basic/url-encode.md)、[Big Endian和Little Endian](/basics/java-basic/big-endian-vs-little-endian.md)
 
 如何解决乱码问题
 
