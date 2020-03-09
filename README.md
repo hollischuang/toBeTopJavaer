@@ -57,7 +57,7 @@ Java的继承与实现
 
 #### 基本数据类型
 
-[7种基本数据类型：整型、浮点型、布尔型、字符型](/basics/java-basic/basic-data-types.md)
+[8种基本数据类型：整型、浮点型、布尔型、字符型](/basics/java-basic/basic-data-types.md)
 
 [整型中byte、short、int、long的取值范围](/basics/java-basic/integer-scope.md)
 
