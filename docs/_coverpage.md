@@ -1,5 +1,3 @@
-<section class="cover show" style="background: linear-gradient(to left bottom, hsl(220, 100%, 85%) 0%,hsl(103, 100%, 85%) 100%)">
-
 <div class="cover-main"><img width="180px" src="icon/icon.JPG">
 
 <h1 id="toBeTopJavaer">
@@ -18,4 +16,4 @@
 </span>
 
 
-<a href="#/README">Get Started</a></p></div><div class="mask"></div></section>
+<a href="#/README">开始阅读</a></p></div><div class="mask"></div></section>
