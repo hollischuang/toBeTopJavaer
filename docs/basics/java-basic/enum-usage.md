@@ -51,7 +51,7 @@
 枚举类型（`enum type`）是指由一组固定的常量组成合法的类型。`Java`中由关键字`enum`来定义一个枚举类型。下面就是`java`枚举类型的定义。
 
     public enum Season {
-        SPRING, SUMMER, AUTUMN, WINER;
+        SPRING, SUMMER, AUTUMN, WINTER;
     }
     
 
