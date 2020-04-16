@@ -11,7 +11,7 @@
     
     * [方法重写与重载](/basics/object-oriented/overloading-vs-overriding.md)
     
-    * Java的继承与实现
+    * [Java的继承与实现](/basics/object-oriented/extends-implement.md)
 
     * [Java的继承与组合](/basics/object-oriented/inheritance-composition.md)
 
