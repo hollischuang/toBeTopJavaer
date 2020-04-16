@@ -17,7 +17,7 @@
 
     * [Integer的缓存机制](/basics/java-basic/integer-cache.md)
     
-    * 如何正确定义接口的返回值(boolean/Boolean)类型及命名(success/Success)
+    * [如何正确定义接口的返回值(boolean/Boolean)类型及命名(success/Success)](/basics/java-basic/success-isSuccess-and-bollean-Bollean.md)
 
 * String
 
