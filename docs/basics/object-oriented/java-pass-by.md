@@ -32,7 +32,7 @@ public void sout(String name) { //形式参数为 name
 
 那么，我来给大家总结一下，值传递和引用传递之前的区别的重点是什么:
 
-[<img src="http://www.hollischuang.com/wp-content/uploads/2018/04/pass.jpg" alt="pass" width="474" height="73" class="aligncenter size-full wp-image-2289" />][3]
+<img src="http://www.hollischuang.com/wp-content/uploads/2018/04/pass.jpg" alt="pass" width="474" height="73" class="aligncenter size-full wp-image-2289" />
 
 这里我们来举一个形象的例子。再来深入理解一下值传递和引用传递：
 
