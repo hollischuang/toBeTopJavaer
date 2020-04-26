@@ -371,6 +371,7 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
             * [冬令时和夏令时](/basics/java-basic/StandardTime-vs-daylightSavingTime.md)
             
             * [时间戳](/basics/java-basic/timestamp.md)
+            
             * Java中时间API
             
             * [格林威治时间](/basics/java-basic/GMT.md)
@@ -427,7 +428,7 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
             
             * lambda表达式
             
-            * Stream API
+            * [Stream API](/basics/java-basic/stream.md)
             
             * 时间API
             
@@ -810,19 +811,19 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
             
         * 创建型设计模式
         
-            * 单例模式
+            * [单例模式](/advance/design-patterns/singleton-pattern.md)
             
-            * 抽象工厂模式
+            * [抽象工厂模式](/advance/design-patterns/abstract-factory-pattern.md)
             
-            * 建造者模式
+            * [建造者模式](/advance/design-patterns/builder-pattern.md)
             
-            * 工厂模式
+            * [工厂模式](/advance/design-patterns/factory-method-pattern.md)
             
             * 原型模式
             
         * 结构型设计模式
         
-            * 适配器模式
+            * [适配器模式](/advance/design-patterns/adapter-pattern.md)
             
             * 桥接模式
             
@@ -842,7 +843,7 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
             
             * 命令模式
             
-            * 迭代器模式
+            * [迭代器模式](/advance/design-patterns/iterator-pattern.md)
             
             * 观察者模式
             
@@ -854,7 +855,7 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
             
             * 状态模式
             
-            * 策略模式
+            * [策略模式](/advance/design-patterns/strategy-pattern.md)
             
             * 责任链模式
             
