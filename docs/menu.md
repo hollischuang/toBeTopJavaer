@@ -134,7 +134,7 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
             
             * 字符串池
             
-            * 常量池（运行时常量池、Class常量池）
+            * 常量池（运行时常量池、[Class常量池](/basics/java-basic/class-contant-pool.md)）
             
             * intern
             
@@ -186,9 +186,9 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
             
             * [Enumeration和Iterator区别](/basics/java-basic/Enumeration-vs-Iterator.md)
             
-            * 如何在遍历的同时删除ArrayList中的元素
-            
             * [fail-fast 和 fail-safe](/basics/java-basic/fail-fast-vs-fail-safe.md)
+            
+            * [如何在遍历的同时删除ArrayList中的元素](/basics/java-basic/delete-while-iterator.md)
             
             * [CopyOnWriteArrayList](/basics/java-basic/CopyOnWriteArrayList.md)
             
