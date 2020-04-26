@@ -49,5 +49,6 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
 
 ![](contact/wechat-hollis.jpg)
 
+如果获取《Java工程师成神之路最新版思维导图》，请在公众号后台回复："成神导图"
 
 ### <a href="#/menu?id=目录">开始阅读</a></p></div><div class="mask"></div></section>
