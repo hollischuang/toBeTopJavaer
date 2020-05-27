@@ -588,7 +588,7 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
             
             * volatile和有序性
             
-            * 有了symchronized为什么还需要volatile
+            * 有了synchronized为什么还需要volatile
             
         * 线程相关方法
         
