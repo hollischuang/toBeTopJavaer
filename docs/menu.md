@@ -114,7 +114,7 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
 
             * [Integer的缓存机制](/basics/java-basic/integer-cache.md)
             
-            * [如何正确定义接口的返回值(boolean/Boolean)类型及命名(success/Success)](/basics/java-basic/success-isSuccess-and-bollean-Bollean.md)
+            * [如何正确定义接口的返回值(boolean/Boolean)类型及命名(success/isSuccess)](/basics/java-basic/success-isSuccess-and-bollean-Bollean.md)
 
         * String
 
@@ -588,7 +588,7 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
             
             * volatile和有序性
             
-            * 有了symchronized为什么还需要volatile
+            * 有了synchronized为什么还需要volatile
             
         * 线程相关方法
         
