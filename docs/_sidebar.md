@@ -57,7 +57,7 @@
 
             * [Integer的缓存机制](/basics/java-basic/integer-cache.md)
             
-            * [如何正确定义接口的返回值(boolean/Boolean)类型及命名(success/Success)](/basics/java-basic/success-isSuccess-and-bollean-Bollean.md)
+            * [如何正确定义接口的返回值(boolean/Boolean)类型及命名(success/isSuccess)](/basics/java-basic/success-isSuccess-and-bollean-Bollean.md)
 
         * String
 
@@ -115,7 +115,15 @@
             
             * Java 8中Map相关的红黑树的引用背景、原理等
             
-            * HashMap的容量、扩容、hash等原理
+            * [HashMap的容量、扩容](/basics/java-basic/hashmap-capacity.md)
+            
+            * [HashMap中hash方法的原理](/basics/java-basic/hash-in-hashmap.md)
+            
+            * [为什么HashMap的默认容量设置成16](/basics/java-basic/hashmap-default-capacity.md)
+            
+            * [为什么HashMap的默认负载因子设置成0.75](/basics/java-basic/hashmap-default-loadfactor.md)
+            
+            * [为什么建议设置HashMap的初始容量，设置多少合适](/basics/java-basic/hashmap-init-capacity.md)
             
             * [Java 8中stream相关用法](/basics/java-basic/stream.md)
             
@@ -259,9 +267,9 @@
             
             * junit 和Spring 的结合
             
-            * mock
+            * [mock](/basics/java-basic/mock.md)
             
-            * mockito
+            * [mockito](/basics/java-basic/ut-with-mockito.md)
             
             * 内存数据库（h2）
             
@@ -531,7 +539,7 @@
             
             * volatile和有序性
             
-            * 有了symchronized为什么还需要volatile
+            * 有了synchronized为什么还需要volatile
             
         * 线程相关方法
         
