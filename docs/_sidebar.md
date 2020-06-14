@@ -235,9 +235,9 @@
            
            * [自定义注解](/basics/java-basic/custom-annotation.md)
            
-           * Java中常用注解使用
+           * [Java中常用注解使用](/basics/java-basic/annotation-in-java.md)
            
-           * 注解与反射的结合
+           * [注解与反射的结合](/basics/java-basic/annotion-and-reflect.md)
            
            * [如何自定义一个注解？](/basics/java-basic/create-annotation.md)
            
@@ -349,7 +349,7 @@
             
             * [UTF8、UTF16、UTF32区别](/basics/java-basic/UTF8-UTF16-UTF32.md)
             
-            * 有了UTF8为什么还需要GBK？
+            * [有了UTF8为什么还需要GBK？](/basics/java-basic/why-gbk.md)
             
             * [GBK、GB2312、GB18030之间的区别](/basics/java-basic/gbk-gb2312-gb18030.md)
             
@@ -379,11 +379,11 @@
             
         * Java 8
             
-            * lambda表达式
+            * [lambda表达式](/basics/java-basic/lambda.md)
             
             * [Stream API](/basics/java-basic/stream.md)
             
-            * 时间API
+            * [时间API](/basics/java-basic/time-in-java8.md)
             
         * 阅读源代码
             
