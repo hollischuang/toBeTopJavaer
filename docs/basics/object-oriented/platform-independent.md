@@ -118,5 +118,5 @@ Java的平台无关性是建立在Java虚拟机的平台有关性基础之上的
  [5]: https://www.hollischuang.com/wp-content/uploads/2019/03/15539291533175.jpg
  [6]: https://www.hollischuang.com/wp-content/uploads/2019/03/15539297082025.jpg
  [7]: https://www.hollischuang.com/wp-content/uploads/2019/03/15539303829914.jpg
- [8]: https://www.hollischuang.com/wp-content/uploads/2019/03/15539319645205.jpg
+ [8]: http://www.hollischuang.com/wp-content/uploads/2019/03/Jietu20200614-165222.jpg
  [9]: https://www.hollischuang.com/archives/2938
