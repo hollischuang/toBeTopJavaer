@@ -15,9 +15,9 @@ HashMap类中有以下主要成员变量：
 *   transient int size; 
     *   记录了Map中KV对的个数
 *   loadFactor 
-    *   装载印子，用来衡量HashMap满的程度。loadFactor的默认值为0.75f（`static final float DEFAULT_LOAD_FACTOR = 0.75f;`）。
+    *   装载因子，用来衡量HashMap满的程度。loadFactor的默认值为0.75f（`static final float DEFAULT_LOAD_FACTOR = 0.75f;`）。
 *   int threshold; 
-    *   临界值，当实际KV个数超过threshold时，HashMap会将容量扩容，threshold＝容量*加载因子
+    *   临界值，当实际KV个数超过threshold时，HashMap会将容量扩容，threshold＝容量*装载因子
 *   除了以上这些重要成员变量外，HashMap中还有一个和他们紧密相关的概念：capacity 
     *   容量，如果不指定，默认容量是16(`static final int DEFAULT_INITIAL_CAPACITY = 1 << 4;`)
 
