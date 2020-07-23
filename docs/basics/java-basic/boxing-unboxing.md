@@ -216,7 +216,7 @@ Java语言是一个面向对象的语言，但是Java中的基本数据类型却
     int k = flag ? i : j;
 ```    
 
-很多人不知道，其实在`int k = flag ? i : j;`这一行，会发生自动拆箱。反编译后代码如下：
+很多人不知道，其实在`int k = flag ? i : j;`这一行，会发生自动拆箱（JDK1.8之前，相见：https://www.hollischuang.com/archives/4749）。反编译后代码如下：
 ```java
     boolean flag = true;
     Integer i = Integer.valueOf(0);

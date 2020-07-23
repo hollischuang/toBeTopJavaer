@@ -50,7 +50,7 @@
 
 对于不同的硬件和操作系统，最主要的区别就是指令不同。比如同样执行a+b，A操作系统对应的二进制指令可能是10001000，而B操作系统对应的指令可能是11101110。那么，想要做到跨平台，最重要的就是可以根据对应的硬件和操作系统生成对应的二进制指令。
 
-而这一工作，主要由我们的Java虚拟机完成。虽然Java语言是平台无关的，但是JVM确实平台有关的，不同的操作系统上面要安装对应的JVM。
+而这一工作，主要由我们的Java虚拟机完成。虽然Java语言是平台无关的，但是JVM却是平台有关的，不同的操作系统上面要安装对应的JVM。
 
 ![][6]
 
@@ -118,5 +118,5 @@ Java的平台无关性是建立在Java虚拟机的平台有关性基础之上的
  [5]: https://www.hollischuang.com/wp-content/uploads/2019/03/15539291533175.jpg
  [6]: https://www.hollischuang.com/wp-content/uploads/2019/03/15539297082025.jpg
  [7]: https://www.hollischuang.com/wp-content/uploads/2019/03/15539303829914.jpg
- [8]: https://www.hollischuang.com/wp-content/uploads/2019/03/15539319645205.jpg
+ [8]: http://www.hollischuang.com/wp-content/uploads/2019/03/Jietu20200614-165222.jpg
  [9]: https://www.hollischuang.com/archives/2938
