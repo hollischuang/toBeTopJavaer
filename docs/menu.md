@@ -132,27 +132,31 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
 
             * [switch对String的支持](/basics/java-basic/switch-string.md)
             
-            * 字符串池
+            * [字符串池](/basics/java-basic/string-pool.md)
             
-            * 常量池（运行时常量池、[Class常量池](/basics/java-basic/class-contant-pool.md)）
+            * [Class常量池](/basics/java-basic/class-contant-pool.md)
             
-            * intern
+            * [运行时常量池](/basics/java-basic/Runtime-Constant-Pool.md)
+            
+            * [intern](/basics/java-basic/intern.md)
+            
+            * [String有没有长度限制？](/basics/java-basic/length-of-string.md)
             
         * Java中各种关键字
         
-            * transient
+            * [transient](basics/java-basic/transient-in-java.md)
             
-            * instanceof
+            * [instanceof](basics/java-basic/instanceof-in-java.md)
             
-            * volatile
+            * [volatile](basics/concurrent-coding/volatile.md)
             
-            * synchronized
+            * [synchronized](basics/concurrent-coding/synchronized.md)
             
-            * final
+            * [final](basics/java-basic/final-in-java.md)
             
-            * static
+            * [static](basics/java-basic/static-in-java.md)
             
-            * const 
+            * [const](basics/java-basic/const-in-java.md)
             
         * 集合类
         
@@ -162,7 +166,9 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
             
             * [Set和List区别？](/basics/java-basic/set-vs-list.md)
         
-            * [ArrayList和LinkedList和Vector的区别](/basics/java-basic/arraylist-vs-linkedlist-vs-vector.md) 
+            * [ArrayList和LinkedList和Vector的区别](/basics/java-basic/arraylist-vs-linkedlist-vs-vector.md)
+            
+            * [ArrayList使用了transient关键字进行存储优化，而Vector没有，为什么？](/basics/java-basic/why-transient-in-arraylist.md) 
             
             * [SynchronizedList和Vector的区别](/basics/java-basic/synchronizedlist-vector.md)
             
@@ -210,7 +216,7 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
             
             * [枚举与单例](/basics/java-basic/enum-singleton.md)
             
-            * Enum类
+            * [Enum类](/basics/java-basic/enum-class.md)
             
             * [Java枚举如何比较](/basics/java-basic/enum-compare.md)
             
@@ -236,15 +242,17 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
             
             * [BIO、NIO和AIO的区别、三种IO的用法与原理](/basics/java-basic/bio-vs-nio-vs-aio.md)
             
-            * netty
+            * [netty](/basics/java-basic/netty.md)
             
         * 反射
         
-            * [反射](/basics/java-basic/reflection.md)与工厂模式、 
+            * [反射](/basics/java-basic/reflection.md)
         
             * [反射有什么作用](/basics/java-basic/usage-of-reflection.md)
         
             * [Class类](/basics/java-basic/Class.md)
+            
+            * 反射与工厂模式实线Spring IOC
         
             * `java.lang.reflect.*`
             
@@ -274,7 +282,7 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
            
            * [为什么serialVersionUID不能随便改](basics/java-basic/serialVersionUID-modify.md)
            
-           * [transient](basics/java-basic/transient.md)
+           * [transient](basics/java-basic/transient-in-java.md)
            
            * [序列化底层原理](basics/java-basic/serialize-principle.md)
            
@@ -282,7 +290,9 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
            
            * [protobuf](basics/java-basic/protobuf.md)
            
-           * 为什么说序列化并不安全
+           * [Apache-Commons-Collections的反序列化漏洞](basics/java-basic/bug-in-apache-commons-collections.md)
+           
+           * [fastjson的反序列化漏洞](basics/java-basic/bug-in-fastjson.md)
            
         * 注解
            
@@ -652,6 +662,8 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
             
             * 方法区在不同版本JDK中的位置
             
+            * [运行时常量池](/basics/java-basic/Runtime-Constant-Pool.md)
+            
             * 堆外内存
               
             * TLAB
@@ -777,6 +789,8 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
         * 什么是编译
         
         * 什么是反编译
+        
+        * [Class常量池](/basics/java-basic/class-contant-pool.md)
         
         * 编译工具：javac
                 
@@ -1288,6 +1302,8 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
         * Linux的常用命令
           
             * find、grep、ps、cp、move、tar、head、tail、netstat、lsof、tree、wget、curl、ping、ssh、echo、free、top
+            
+            * 为什么kill -9 不能随便执行
             
         * 进程间通信
         
@@ -1930,4 +1946,4 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
         
         * Swift
         
-        * Rust       
+        * Rust

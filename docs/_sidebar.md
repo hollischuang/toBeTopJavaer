@@ -79,9 +79,13 @@
             
             * [字符串池](/basics/java-basic/string-pool.md)
             
-            * 常量池（[运行时常量池](/basics/java-basic/Runtime-Constant-Pool.md)、[Class常量池](/basics/java-basic/class-contant-pool.md)）
+            * [Class常量池](/basics/java-basic/class-contant-pool.md)
+            
+            * [运行时常量池](/basics/java-basic/Runtime-Constant-Pool.md)
             
             * [intern](/basics/java-basic/intern.md)
+            
+            * [String有没有长度限制？](/basics/java-basic/length-of-string.md)
             
         * Java中各种关键字
         
@@ -157,7 +161,7 @@
             
             * [枚举与单例](/basics/java-basic/enum-singleton.md)
             
-            * Enum类
+            * [Enum类](/basics/java-basic/enum-class.md)
             
             * [Java枚举如何比较](/basics/java-basic/enum-compare.md)
             
@@ -183,15 +187,17 @@
             
             * [BIO、NIO和AIO的区别、三种IO的用法与原理](/basics/java-basic/bio-vs-nio-vs-aio.md)
             
-            * netty
+            * [netty](/basics/java-basic/netty.md)
             
         * 反射
         
-            * [反射](/basics/java-basic/reflection.md)与工厂模式、 
+            * [反射](/basics/java-basic/reflection.md)
         
             * [反射有什么作用](/basics/java-basic/usage-of-reflection.md)
         
             * [Class类](/basics/java-basic/Class.md)
+            
+            * 反射与工厂模式实线Spring IOC
         
             * `java.lang.reflect.*`
             
@@ -601,6 +607,8 @@
             
             * 方法区在不同版本JDK中的位置
             
+            * [运行时常量池](/basics/java-basic/Runtime-Constant-Pool.md)
+            
             * 堆外内存
               
             * TLAB
@@ -726,6 +734,8 @@
         * 什么是编译
         
         * 什么是反编译
+        
+        * [Class常量池](/basics/java-basic/class-contant-pool.md)
         
         * 编译工具：javac
                 
@@ -1237,6 +1247,8 @@
         * Linux的常用命令
           
             * find、grep、ps、cp、move、tar、head、tail、netstat、lsof、tree、wget、curl、ping、ssh、echo、free、top
+            
+            * 为什么kill -9 不能随便执行
             
         * 进程间通信
         
