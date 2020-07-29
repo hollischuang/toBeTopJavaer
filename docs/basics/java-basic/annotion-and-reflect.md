@@ -72,8 +72,8 @@ public class MyTest {
         Class clazz = obj.getClass();
         Field[] declareFields = clazz.getDeclaredFields();
         for (Field field:declareFields) {
-            //检查该类是否使用了某个注解
-            if(clazz.isAnnotationPresent(MyAnno.class)){
+            //检查该字段是否使用了某个注解
+            if(field.isAnnotationPresent(MyAnno.class)){
                 MyAnno anno = field.getAnnotation(MyAnno.class);
                 if(anno!=null){
                     String fieldName = field.getName();
