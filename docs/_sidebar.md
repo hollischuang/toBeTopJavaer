@@ -197,7 +197,7 @@
         
             * [Class类](/basics/java-basic/Class.md)
             
-            * 反射与工厂模式实线Spring IOC
+            * [反射与工厂模式实现Spring IOC](ioc-implement-with-factory-and-reflection.md)
         
             * `java.lang.reflect.*`
             
@@ -275,13 +275,13 @@
             
         * 单元测试
             
-            * junit
+            * [junit](/basics/java-basic/junit.md)
             
             * junit 和Spring 的结合
             
             * [mock](/basics/java-basic/mock.md)
             
-            * [mockito](/basics/java-basic/ut-with-mockito.md)
+            * [JMockit](/basics/java-basic/ut-with-jmockit.md)
             
             * [内存数据库（h2）](/basics/java-basic/h2-db.md)
             
