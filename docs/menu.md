@@ -252,7 +252,7 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
         
             * [Class类](/basics/java-basic/Class.md)
             
-            * [反射与工厂模式实现Spring IOC](ioc-implement-with-factory-and-reflection.md)
+            * [反射与工厂模式实现Spring IOC](/basics/java-basic/ioc-implement-with-factory-and-reflection.md)
         
             * `java.lang.reflect.*`
             
