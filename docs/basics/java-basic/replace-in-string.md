@@ -20,7 +20,7 @@ replaceAll和replaceFirst的区别主要是替换的内容不同，replaceAll是
 //文字替换（全部） 
 Pattern pattern = Pattern.compile("正则表达式"); 
 Matcher matcher = pattern.matcher("正则表达式 Hello World,正则表达式 Hello World"); 
-//替换第一个符合正则的数据 
+//替换所有符合正则的数据 
 System.out.println(matcher.replaceAll("Java")); 
 
 ```
