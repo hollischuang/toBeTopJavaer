@@ -484,19 +484,21 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
             
         * 线程
         
-            * 线程与进程的区别
+            * [线程与进程的区别](/basics/concurrent-coding/progress-vs-thread.md)
             
-            * 线程的实现
+            * [线程的特点](/basics/concurrent-coding/thread.md)
             
-            * 线程的状态
+            * [线程的实现](/basics/concurrent-coding/implement-of-thread.md)
             
-            * 线程优先级
+            * [线程的状态](/basics/concurrent-coding/state-of-thread.md)
             
-            * 线程调度
+            * [线程优先级](/basics/concurrent-coding/priority-of-thread.md)
+            
+            * [线程调度](/basics/concurrent-coding/thread-scheduling.md)
             
             * 多线程如何Debug
             
-            * 守护线程
+            * [守护线程](/basics/concurrent-coding/deamon-thread.md)
             
         * 创建线程的多种方式
             
