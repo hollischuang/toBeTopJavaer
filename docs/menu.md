@@ -774,7 +774,13 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
         
         * 类加载过程
         
-        * 双亲委派（破坏双亲委派）
+        * 如何判断JVM中类和其他类是不是同一个类
+        
+        * 双亲委派原则
+        
+        * 如何打破双亲委派
+        
+        * 如何自定义类加载器
         
         * 模块化（jboss modules、osgi、jigsaw）
         
