@@ -496,19 +496,19 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
             
             * [线程调度](/basics/concurrent-coding/thread-scheduling.md)
             
-            * 多线程如何Debug
+            * [多线程如何Debug](/basics/concurrent-coding/debug-in-multithread.md)
             
             * [守护线程](/basics/concurrent-coding/deamon-thread.md)
             
         * 创建线程的多种方式
             
-            * 继承Thread类创建线程
+            * [继承Thread类创建线程](/basics/concurrent-coding/create-thread-with-extends.md)
             
-            * 实现Runnable接口创建线程
+            * [实现Runnable接口创建线程](/basics/concurrent-coding/create-thread-with-Implement.md)
             
-            * 通过Callable和FutureTask创建线程
+            * [通过Callable和FutureTask创建线程](/basics/concurrent-coding/create-thread-with-callback-future-task.md)
             
-            * 通过线程池创建线程
+            * [通过线程池创建线程](/basics/concurrent-coding/create-thread-with-thead-pool.md)
             
         * 线程池
             
