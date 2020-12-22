@@ -2,11 +2,11 @@
 
 @Override 表示当前方法覆盖了父类的方法
 
-@Deprecation 表示方法已经过时,方法上有横线，使用时会有警告。
+@Deprecated 表示方法已经过时,方法上有横线，使用时会有警告。
 
 @SuppressWarnings 表示关闭一些警告信息(通知java编译器忽略特定的编译警告)
 
-SafeVarargs (jdk1.7更新) 表示：专门为抑制“堆污染”警告提供的。
+@SafeVarargs (jdk1.7更新) 表示：专门为抑制“堆污染”警告提供的。
 
 @FunctionalInterface (jdk1.8更新) 表示：用来指定某个接口必须是函数式接口，否则就会编译出错。
 
