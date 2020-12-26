@@ -156,7 +156,7 @@ HashMap的数据是存储在链表数组里面的。在对HashMap进行插入/�
 > 
 > 也就是说，HashTable的链表数组的默认大小是一个素数、奇数。之后的每次扩充结果也都是奇数。
 > 
-> 由于HashTable会尽量使用素数、奇数作为容量的大小。当哈希表的大小为素数时，简单的取模哈希的结果会更加均匀。（这个是可以证明出来的，由于不是本文重点，暂不详细介绍，可参考：http://zhaox.github.io/algorithm/2015/06/29/hash）
+> 由于HashTable会尽量使用素数、奇数作为容量的大小。当哈希表的大小为素数时，简单的取模哈希的结果会更加均匀。（这个是可以证明出来的，由于不是本文重点，暂不详细介绍，可参考：http://zhaox.github.io/algorithm/2015/06/29/hash 
 
 至此，我们看完了Java 7中HashMap和HashTable中对于hash的实现，我们来做个简单的总结。
 
@@ -210,7 +210,7 @@ HashMap的数据是存储在链表数组里面的。在对HashMap进行插入/�
 
 HashTable In Java 8
 
-在Java 8的HashTable中，已经不在有hash方法了。但是哈希的操作还是在的，比如在put方法中就有如下实现：
+在Java 8的HashTable中，已经不再有hash方法了。但是哈希的操作还是在的，比如在put方法中就有如下实现：
 
         int hash = key.hashCode();
         int index = (hash & 0x7FFFFFFF) % tab.length;
