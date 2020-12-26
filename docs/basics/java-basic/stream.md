@@ -120,7 +120,6 @@ distinct主要用来去重，以下代码片段使用 distinct 对元素进行�
 
 ### Stream最终操作
 
-Stream的中间操作得到的结果还是一个Stream，那么如何把一个Stream转换成我们需要的类型呢？比如计算出流中元素的个数、将流换成集合等。这就需要最终操作（terminal operation）
 
 最终操作会消耗流，产生一个最终结果。也就是说，在最终操作之后，不能再次使用流，也不能再使用任何中间操作，否则将抛出异常：
 
@@ -172,7 +171,7 @@ Stream的创建有两种方式，分别是通过集合类的stream方法、通�
 
 Stream的中间操作可以用来处理Stream，中间操作的输入和输出都是Stream，中间操作可以是过滤、转换、排序等。
 
-Stream的最终操作可以将Stream转成其他形式，如计算出流中元素的个数、将流换成集合、以及元素的遍历等。
+Stream的最终操作可以将Stream转成其他形式，如计算出流中元素的个数、将流转换成集合、以及元素的遍历等。
 
  [1]: https://www.hollischuang.com/wp-content/uploads/2019/03/15521192454583.jpg
  [2]: https://www.hollischuang.com/wp-content/uploads/2019/03/15521194075219.jpg
