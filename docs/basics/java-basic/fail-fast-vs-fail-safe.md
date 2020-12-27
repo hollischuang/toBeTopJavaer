@@ -11,14 +11,14 @@
 举一个最简单的fail-fast的例子：
 
     public int divide(int divisor,int dividend){
-        if(dividend == 0){
-            throw new RuntimeException("dividend can't be null");
+        if(divisor == 0){
+            throw new RuntimeException("divisor can't be null");
         }
-        return divisor/dividend;
+        return dividend/divisor;
     }
     
 
-上面的代码是一个对两个整数做除法的方法，在divide方法中，我们对被除数做了个简单的检查，如果其值为0，那么就直接抛出一个异常，并明确提示异常原因。这其实就是fail-fast理念的实际应用。
+上面的代码是一个对两个整数做除法的方法，在divide方法中，我们对除数做了个简单的检查，如果其值为0，那么就直接抛出一个异常，并明确提示异常原因。这其实就是fail-fast理念的实际应用。
 
 这样做的好处就是可以预先识别出一些错误情况，一方面可以避免执行复杂的其他代码，另外一方面，这种异常情况被识别之后也可以针对性的做一些单独处理。
 
