@@ -682,7 +682,7 @@ Java里，对于文件操作IO流、数据库连接等开销非常昂贵的资�
     }
 
 
-上面这段代码，有两个重载的函数，因为他们的参数类型不同，一个是List<string>另一个是List<integer> ，但是，这段代码是编译通不过的。因为我们前面讲过，参数List</integer><integer>和List<string>编译之后都被擦除了，变成了一样的原生类型List，擦除动作导致这两个方法的特征签名变得一模一样。</string></integer></string>
+上面这段代码，有两个重载的函数，因为他们的参数类型不同，一个是`List<String>`另一个是`List<Integer>` ，但是，这段代码是编译通不过的。因为我们前面讲过，参数`List<Integer>`和`List<String>`编译之后都被擦除了，变成了一样的原生类型List，擦除动作导致这两个方法的特征签名变得一模一样。
 
 **二、当泛型遇到catch** 泛型的类型参数不能用在Java异常处理的catch语句中。因为异常处理是由JVM在运行时刻来进行的。由于类型信息被擦除，JVM是无法区分两个异常类型`MyException<String>`和`MyException<Integer>`的
 
