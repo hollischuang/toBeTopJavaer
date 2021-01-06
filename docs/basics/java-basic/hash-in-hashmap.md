@@ -51,7 +51,7 @@
 
 ### 源码解析
 
-首先，在同一个版本的Jdk中，HashMap、HashTable以及ConcurrentHashMap里面的hash方法的实现是不同的。再不同的版本的JDK中（Java7 和 Java8）中也是有区别的。我会尽量全部介绍到。相信，看文这篇文章，你会彻底理解hash方法。
+首先，在同一个版本的Jdk中，HashMap、HashTable以及ConcurrentHashMap里面的hash方法的实现是不同的。在不同的版本的JDK中（Java7 和 Java8）中也是有区别的。我会尽量全部介绍到。相信，看完这篇文章，你会彻底理解hash方法。
 
 在上代码之前，我们先来做个简单分析。我们知道，hash方法的功能是根据Key来定位这个K-V在链表数组中的位置的。也就是hash方法的输入应该是个Object类型的Key，输出应该是个int类型的数组下标。如果让你设计这个方法，你会怎么做？
 
@@ -156,7 +156,7 @@ HashMap的数据是存储在链表数组里面的。在对HashMap进行插入/�
 > 
 > 也就是说，HashTable的链表数组的默认大小是一个素数、奇数。之后的每次扩充结果也都是奇数。
 > 
-> 由于HashTable会尽量使用素数、奇数作为容量的大小。当哈希表的大小为素数时，简单的取模哈希的结果会更加均匀。（这个是可以证明出来的，由于不是本文重点，暂不详细介绍，可参考：http://zhaox.github.io/algorithm/2015/06/29/hash）
+> 由于HashTable会尽量使用素数、奇数作为容量的大小。当哈希表的大小为素数时，简单的取模哈希的结果会更加均匀。（这个是可以证明出来的，由于不是本文重点，暂不详细介绍，可参考：http://zhaox.github.io/algorithm/2015/06/29/hash 
 
 至此，我们看完了Java 7中HashMap和HashTable中对于hash的实现，我们来做个简单的总结。
 
@@ -210,7 +210,7 @@ HashMap的数据是存储在链表数组里面的。在对HashMap进行插入/�
 
 HashTable In Java 8
 
-在Java 8的HashTable中，已经不在有hash方法了。但是哈希的操作还是在的，比如在put方法中就有如下实现：
+在Java 8的HashTable中，已经不再有hash方法了。但是哈希的操作还是在的，比如在put方法中就有如下实现：
 
         int hash = key.hashCode();
         int index = (hash & 0x7FFFFFFF) % tab.length;
