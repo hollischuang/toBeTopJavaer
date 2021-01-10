@@ -2,12 +2,12 @@
 
 单例相关文章一览：
 
-[设计模式（二）——单例模式][1] 
-[设计模式（三）——JDK中的那些单例][2] 
-[单例模式的七种写法][3] 
-[单例与序列化的那些事儿][4] 
-[不使用synchronized和lock，如何实现一个线程安全的单例？][5] 
-[不使用synchronized和lock，如何实现一个线程安全的单例？（二）][6]
+[设计模式（二）——单例模式][1]  
+[设计模式（三）——JDK中的那些单例][2]  
+[单例模式的七种写法][3]  
+[单例与序列化的那些事儿][4]  
+[不使用synchronized和lock，如何实现一个线程安全的单例？][5]  
+[不使用synchronized和lock，如何实现一个线程安全的单例？（二）][6] 
 
 如果你对单例不是很了解，或者对于单例的线程安全问题以及序列化会破坏单例等问题不是很清楚，可以先阅读以上文章。上面六篇文章看完之后，相信你一定会对单例模式有更多，更深入的理解。
 
@@ -15,7 +15,7 @@
 
 ### 哪种写单例的方式最好
 
-在StakcOverflow中，有一个关于[What is an efficient way to implement a singleton pattern in Java?][7]的讨论：
+在StackOverflow中，有一个关于[What is an efficient way to implement a singleton pattern in Java?][7]的讨论：
 
 <img src="https://www.hollischuang.com/wp-content/uploads/2018/06/enum.png" alt="" width="1500" height="1158" class="aligncenter size-full wp-image-3683" />
 
@@ -78,7 +78,7 @@
 
 通过将定义好的枚举[反编译][9]，我们就能发现，其实枚举在经过`javac`的编译之后，会被转换成形如`public final class T extends Enum`的定义。
 
-而且，枚举中的各个枚举项同事通过`static`来定义的。如：
+而且，枚举中的各个枚举项同时通过`static`来定义的。如：
 
     public enum T {
         SPRING,SUMMER,AUTUMN,WINTER;
