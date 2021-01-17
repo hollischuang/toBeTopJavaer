@@ -659,7 +659,7 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
             
             * 运行时数据区
             
-            * 运行时数据区哪些是线程独享
+            * [运行时数据区哪些是线程独享](/basement/jvm/exclusive-in-runtime-area.md)
             
             * 堆和栈区别
             
@@ -777,13 +777,25 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
         
         * 如何判断JVM中类和其他类是不是同一个类
         
-        * 双亲委派原则
+        * [双亲委派原则](/basement/jvm/parents-delegate.md)
         
-        * 如何打破双亲委派
+        * [为什么需要双亲委派？](/basement/jvm/why-parents-delegate.md)
         
-        * 如何自定义类加载器
+        * [“父子加载器”之间的关系是继承吗？](/basement/jvm/relation-with-parents-delegate.md)
         
-        * 模块化（jboss modules、osgi、jigsaw）
+        * [双亲委派是如何实现的？](/basement/jvm/implements-of-parents-delegate.md)
+        
+        * [如何打破双亲委派](/basement/jvm/ibreak-parants-delegate.md)
+        
+        * [如何自定义类加载器](/basement/jvm/define-class-loader.md)
+        
+        * [双亲委派被破坏的例子](/basement/jvm/sample-of-break-parents-delegate.md)
+        
+        * [为什么JNDI，JDBC等需要破坏双亲委派？](/basement/jvm/spi-parents-delegate.md)
+        
+        * [为什么Tomcat要破坏双亲委派](/basement/jvm/tomcat-parents-delegate.md)
+        
+        * [模块化（jboss modules、osgi、jigsaw）](/basement/jvm/moduler.md)
         
     * 打包工具
         
