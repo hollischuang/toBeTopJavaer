@@ -1,5 +1,4 @@
 
-
 * 基础篇
 
     * 面向对象
@@ -170,6 +169,8 @@
             * [枚举的序列化如何实现](/basics/java-basic/enum-serializable.md)
             
             * [枚举的线程安全性问题](/basics/java-basic/enum-thread-safe.md)
+            
+            * 为什么不建议在对外接口中使用枚举
             
         * IO
             
@@ -349,6 +350,8 @@
             
             * [yyyy和YYYY有什么区别？](/basics/java-basic/YYYY-vs-yyyy.md)
             
+            * 为什么日期格式化时必须有使用y表示年，而不能用Y？ 
+            
         * 编码方式
             
             * [什么是ASCII？](/basics/java-basic/ASCII.md)
@@ -386,6 +389,12 @@
             * java.lang.management.* 
             
             * javax.management.*
+            
+        * BigDecimal
+            
+            * 为什么0.1+0.2不等于0.3
+            
+            * 为什么不能使用BigDecimal的equals比较大小
             
         * Java 8
             
@@ -931,7 +940,11 @@
         
             * 用Java写一个简单的静态文件的HTTP服务器
             
-        * http/2
+        * HTTP/2
+            
+            * HTTP/2 存在哪些问题？
+            
+        * HTTP/3
         
         * Java RMI，Socket，HttpClient
                 
@@ -1009,9 +1022,13 @@
             
             * AOP原理
             
+            * Spring AOP不支持方法自调用的问题
+            
             * 实现Spring的IOC
             
             * spring四种依赖注入方式
+            
+            * 为什么我不建议使用@Transactional声明事务 
             
         * Spring MVC
             
@@ -1270,6 +1287,9 @@
             
             * 为什么kill -9 不能随便执行
             
+            * rm一个被打开的文件会发生什么            
+            * rm一个被打开的文件会发生什么
+            
         * 进程间通信
         
         * 服务器性能指标
@@ -1395,6 +1415,10 @@
             * redis
             
             * memcached
+            
+        * Redis
+        
+            * Redis多线程 
             
         * 分别使用数据库锁、NoSql实现分布式锁
             
@@ -1738,6 +1762,12 @@
             * 主主复制
     
         * 异地多活
+        
+        * 预案
+        
+        * 预热
+        
+        * 限流
     
     * 高性能
     
@@ -1911,4 +1941,4 @@
         
         * Swift
         
-        * Rust       
+        * Rust
