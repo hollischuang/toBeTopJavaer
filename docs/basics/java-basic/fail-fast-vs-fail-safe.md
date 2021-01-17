@@ -111,9 +111,9 @@ CMException，当方法检测到对象的并发修改，但不允许这种修改
     }
     
 
-如上，在该方法中对modCount和expectedModCount进行了比较，如果二者不想等，则抛出CMException。
+如上，在该方法中对modCount和expectedModCount进行了比较，如果二者不相等，则抛出CMException。
 
-那么，modCount和expectedModCount是什么？是什么原因导致他们的值不想等的呢？
+那么，modCount和expectedModCount是什么？是什么原因导致他们的值不相等的呢？
 
 modCount是ArrayList中的一个成员变量。它表示该集合实际被修改的次数。
 
