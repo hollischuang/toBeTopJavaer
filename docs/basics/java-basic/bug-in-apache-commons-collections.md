@@ -100,7 +100,7 @@ Commons Collections中提供了一个Transformer接口，主要是可以用来�
 
 ![][7]
 
-那么，结合序列化，现在的攻击更加进了一步，不再需要一定要传入`newTransformer.transform(Runtime.getRuntime());`这样的代码了，只要代码中有 `transformer.transform()`方法的调用即可，无论里面是什么参数：
+那么，结合序列化，现在的攻击更加进了一步，不再需要传入`newTransformer.transform(Runtime.getRuntime());`这样的代码了，只要代码中有 `transformer.transform()`方法的调用即可，无论里面是什么参数：
 
 ![][8]
 
