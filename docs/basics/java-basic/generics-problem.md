@@ -1,6 +1,6 @@
 
 
-###一、当泛型遇到重载
+### 一、当泛型遇到重载
 
     public class GenericTypes {  
     
