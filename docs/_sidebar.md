@@ -172,7 +172,7 @@
             
             * [枚举的线程安全性问题](/basics/java-basic/enum-thread-safe.md)
             
-            * 为什么不建议在对外接口中使用枚举
+            * [为什么不建议在对外接口中使用枚举](/basics/java-basic/stop-use-enum-in-api.md)
             
         * IO
             
@@ -396,7 +396,9 @@
             
             * 为什么0.1+0.2不等于0.3
             
-            * 为什么不能使用BigDecimal的equals比较大小
+            * [为什么不能使用BigDecimal的equals比较大小](/basics/java-basic/stop-using-equlas-in-bigdecimal.md)
+            
+            * 为什么不能直接使用double创建一个BigDecimal
             
         * Java 8
             
