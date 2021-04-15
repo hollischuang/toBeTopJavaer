@@ -26,10 +26,6 @@
 
 @Resource默认按名称装配，当找不到与名称匹配的bean才会按类型装配。
 
-@PostConstruct 初始化注解
-
-@PreDestroy 摧毁注解 默认 单例  启动就加载
-
 
 ### Spring中的这几个注解有什么区别：@Component 、@Repository、@Service、@Controller
 

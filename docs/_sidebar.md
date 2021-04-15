@@ -1,3 +1,4 @@
+
 * 基础篇
 
     * 面向对象
@@ -16,6 +17,8 @@
             * [方法重写与重载](/basics/object-oriented/overloading-vs-overriding.md)
             
             * [Java的继承与实现](/basics/object-oriented/extends-implement.md)
+            
+            * [Java为什么不支持多继承](/basics/object-oriented/multiple-inheritance.md)
         
             * [Java的继承与组合](/basics/object-oriented/inheritance-composition.md)
         
@@ -57,7 +60,7 @@
 
             * [Integer的缓存机制](/basics/java-basic/integer-cache.md)
             
-            * [如何正确定义接口的返回值(boolean/Boolean)类型及命名(success/Success)](/basics/java-basic/success-isSuccess-and-bollean-Bollean.md)
+            * [如何正确定义接口的返回值(boolean/Boolean)类型及命名(success/isSuccess)](/basics/java-basic/success-isSuccess-and-boolean-Boolean.md)
 
         * String
 
@@ -65,7 +68,7 @@
 
             * [JDK 6和JDK 7中substring的原理及区别](/basics/java-basic/substring.md)
 
-            * replaceFirst、replaceAll、replace区别
+            * [replaceFirst、replaceAll、replace区别](/basics/java-basic/replace-in-string.md)
 
             * [String对“+”的重载](/basics/java-basic/string-append.md)
 
@@ -75,27 +78,31 @@
 
             * [switch对String的支持](/basics/java-basic/switch-string.md)
             
-            * 字符串池
+            * [字符串池](/basics/java-basic/string-pool.md)
             
-            * 常量池（运行时常量池、Class常量池）
+            * [Class常量池](/basics/java-basic/class-contant-pool.md)
             
-            * intern
+            * [运行时常量池](/basics/java-basic/Runtime-Constant-Pool.md)
+            
+            * [intern](/basics/java-basic/intern.md)
+            
+            * [String有没有长度限制？](/basics/java-basic/length-of-string.md)
             
         * Java中各种关键字
         
-            * transient
+            * [transient](basics/java-basic/transient-in-java.md)
             
-            * instanceof
+            * [instanceof](basics/java-basic/instanceof-in-java.md)
             
-            * volatile
+            * [volatile](basics/concurrent-coding/volatile.md)
             
-            * synchronized
+            * [synchronized](basics/concurrent-coding/synchronized.md)
             
-            * final
+            * [final](basics/java-basic/final-in-java.md)
             
-            * static
+            * [static](basics/java-basic/static-in-java.md)
             
-            * const 
+            * [const](basics/java-basic/const-in-java.md)
             
         * 集合类
         
@@ -105,7 +112,9 @@
             
             * [Set和List区别？](/basics/java-basic/set-vs-list.md)
         
-            * [ArrayList和LinkedList和Vector的区别](/basics/java-basic/arraylist-vs-linkedlist-vs-vector.md) 
+            * [ArrayList和LinkedList和Vector的区别](/basics/java-basic/arraylist-vs-linkedlist-vs-vector.md)
+            
+            * [ArrayList使用了transient关键字进行存储优化，而Vector没有，为什么？](/basics/java-basic/why-transient-in-arraylist.md) 
             
             * [SynchronizedList和Vector的区别](/basics/java-basic/synchronizedlist-vector.md)
             
@@ -115,23 +124,31 @@
             
             * Java 8中Map相关的红黑树的引用背景、原理等
             
-            * HashMap的容量、扩容、hash等原理
+            * [HashMap的容量、扩容](/basics/java-basic/hashmap-capacity.md)
+            
+            * [HashMap中hash方法的原理](/basics/java-basic/hash-in-hashmap.md)
+            
+            * [为什么HashMap的默认容量设置成16](/basics/java-basic/hashmap-default-capacity.md)
+            
+            * [为什么HashMap的默认负载因子设置成0.75](/basics/java-basic/hashmap-default-loadfactor.md)
+            
+            * [为什么建议设置HashMap的初始容量，设置多少合适](/basics/java-basic/hashmap-init-capacity.md)
             
             * [Java 8中stream相关用法](/basics/java-basic/stream.md)
             
-            * Apache集合处理工具类的使用
+            * [Apache集合处理工具类的使用](/basics/java-basic/apache-collections.md)
             
             * 不同版本的JDK中HashMap的实现的区别以及原因
             
             * [Arrays.asList获得的List使用时需要注意什么](/basics/java-basic/Arrays-asList.md)
             
-            * Collection如何迭代 
+            * [Collection如何迭代](/basics/java-basic/iteration-of-collection.md)
             
             * [Enumeration和Iterator区别](/basics/java-basic/Enumeration-vs-Iterator.md)
             
-            * 如何在遍历的同时删除ArrayList中的元素
-            
             * [fail-fast 和 fail-safe](/basics/java-basic/fail-fast-vs-fail-safe.md)
+            
+            * [如何在遍历的同时删除ArrayList中的元素](/basics/java-basic/delete-while-iterator.md)
             
             * [CopyOnWriteArrayList](/basics/java-basic/CopyOnWriteArrayList.md)
             
@@ -145,7 +162,7 @@
             
             * [枚举与单例](/basics/java-basic/enum-singleton.md)
             
-            * Enum类
+            * [Enum类](/basics/java-basic/enum-class.md)
             
             * [Java枚举如何比较](/basics/java-basic/enum-compare.md)
             
@@ -155,13 +172,15 @@
             
             * [枚举的线程安全性问题](/basics/java-basic/enum-thread-safe.md)
             
+            * [为什么不建议在对外接口中使用枚举](/basics/java-basic/stop-use-enum-in-api.md)
+            
         * IO
             
             * [字符流、字节流](/basics/java-basic/byte-stream-vs-character-stream.md)
             
             * [输入流、输出流](/basics/java-basic/input-stream-vs-output-stream.md)
             
-            * 字节流和字符流之间的相互转换
+            * [字节流和字符流之间的相互转换](/basics/java-basic/convert-bytestream-characterstream.md)
             
             * [同步、异步](/basics/java-basic/synchronized-vs-asynchronization.md)
             
@@ -171,15 +190,17 @@
             
             * [BIO、NIO和AIO的区别、三种IO的用法与原理](/basics/java-basic/bio-vs-nio-vs-aio.md)
             
-            * netty
+            * [netty](/basics/java-basic/netty.md)
             
         * 反射
         
-            * [反射](/basics/java-basic/reflection.md)与工厂模式、 
+            * [反射](/basics/java-basic/reflection.md)
         
             * [反射有什么作用](/basics/java-basic/usage-of-reflection.md)
         
             * [Class类](/basics/java-basic/Class.md)
+            
+            * [反射与工厂模式实现Spring IOC](/basics/java-basic/ioc-implement-with-factory-and-reflection.md)
         
             * `java.lang.reflect.*`
             
@@ -209,7 +230,7 @@
            
            * [为什么serialVersionUID不能随便改](basics/java-basic/serialVersionUID-modify.md)
            
-           * [transient](basics/java-basic/transient.md)
+           * [transient](basics/java-basic/transient-in-java.md)
            
            * [序列化底层原理](basics/java-basic/serialize-principle.md)
            
@@ -217,7 +238,9 @@
            
            * [protobuf](basics/java-basic/protobuf.md)
            
-           * 为什么说序列化并不安全
+           * [Apache-Commons-Collections的反序列化漏洞](basics/java-basic/bug-in-apache-commons-collections.md)
+           
+           * [fastjson的反序列化漏洞](basics/java-basic/bug-in-fastjson.md)
            
         * 注解
            
@@ -225,9 +248,9 @@
            
            * [自定义注解](/basics/java-basic/custom-annotation.md)
            
-           * Java中常用注解使用
+           * [Java中常用注解使用](/basics/java-basic/annotation-in-java.md)
            
-           * 注解与反射的结合
+           * [注解与反射的结合](/basics/java-basic/annotion-and-reflect.md)
            
            * [如何自定义一个注解？](/basics/java-basic/create-annotation.md)
            
@@ -255,15 +278,15 @@
             
         * 单元测试
             
-            * junit
+            * [junit](/basics/java-basic/junit.md)
             
             * junit 和Spring 的结合
             
-            * mock
+            * [mock](/basics/java-basic/mock.md)
             
-            * mockito
+            * [JMockit](/basics/java-basic/ut-with-jmockit.md)
             
-            * 内存数据库（h2）
+            * [内存数据库（h2）](/basics/java-basic/h2-db.md)
             
         * 正则表达式
             
@@ -314,6 +337,7 @@
             * [冬令时和夏令时](/basics/java-basic/StandardTime-vs-daylightSavingTime.md)
             
             * [时间戳](/basics/java-basic/timestamp.md)
+            
             * Java中时间API
             
             * [格林威治时间](/basics/java-basic/GMT.md)
@@ -328,6 +352,8 @@
             
             * [yyyy和YYYY有什么区别？](/basics/java-basic/YYYY-vs-yyyy.md)
             
+            * 为什么日期格式化时必须有使用y表示年，而不能用Y？ 
+            
         * 编码方式
             
             * [什么是ASCII？](/basics/java-basic/ASCII.md)
@@ -338,7 +364,7 @@
             
             * [UTF8、UTF16、UTF32区别](/basics/java-basic/UTF8-UTF16-UTF32.md)
             
-            * 有了UTF8为什么还需要GBK？
+            * [有了UTF8为什么还需要GBK？](/basics/java-basic/why-gbk.md)
             
             * [GBK、GB2312、GB18030之间的区别](/basics/java-basic/gbk-gb2312-gb18030.md)
             
@@ -366,13 +392,21 @@
             
             * javax.management.*
             
+        * BigDecimal
+            
+            * 为什么0.1+0.2不等于0.3
+            
+            * [为什么不能使用BigDecimal的equals比较大小](/basics/java-basic/stop-using-equlas-in-bigdecimal.md)
+            
+            * 为什么不能直接使用double创建一个BigDecimal
+            
         * Java 8
             
-            * lambda表达式
+            * [lambda表达式](/basics/java-basic/lambda.md)
             
-            * Stream API
+            * [Stream API](/basics/java-basic/stream.md)
             
-            * 时间API
+            * [时间API](/basics/java-basic/time-in-java8.md)
             
         * 阅读源代码
             
@@ -408,29 +442,31 @@
             
         * 线程
         
-            * 线程与进程的区别
+            * [线程与进程的区别](/basics/concurrent-coding/progress-vs-thread.md)
             
-            * 线程的实现
+            * [线程的特点](/basics/concurrent-coding/thread.md)
             
-            * 线程的状态
+            * [线程的实现](/basics/concurrent-coding/implement-of-thread.md)
             
-            * 线程优先级
+            * [线程的状态](/basics/concurrent-coding/state-of-thread.md)
             
-            * 线程调度
+            * [线程优先级](/basics/concurrent-coding/priority-of-thread.md)
             
-            * 多线程如何Debug
+            * [线程调度](/basics/concurrent-coding/thread-scheduling.md)
             
-            * 守护线程
+            * [多线程如何Debug](/basics/concurrent-coding/debug-in-multithread.md)
+            
+            * [守护线程](/basics/concurrent-coding/deamon-thread.md)
             
         * 创建线程的多种方式
             
-            * 继承Thread类创建线程
+            * [继承Thread类创建线程](/basics/concurrent-coding/create-thread-with-extends.md)
             
-            * 实现Runnable接口创建线程
+            * [实现Runnable接口创建线程](/basics/concurrent-coding/create-thread-with-Implement.md)
             
-            * 通过Callable和FutureTask创建线程
+            * [通过Callable和FutureTask创建线程](/basics/concurrent-coding/create-thread-with-callback-future-task.md)
             
-            * 通过线程池创建线程
+            * [通过线程池创建线程](/basics/concurrent-coding/create-thread-with-thead-pool.md)
             
         * 线程池
             
@@ -530,7 +566,7 @@
             
             * volatile和有序性
             
-            * 有了symchronized为什么还需要volatile
+            * 有了synchronized为什么还需要volatile
             
         * 线程相关方法
         
@@ -580,11 +616,13 @@
             
             * 运行时数据区
             
-            * 运行时数据区哪些是线程独享
+            * [运行时数据区哪些是线程独享](/basement/jvm/exclusive-in-runtime-area.md)
             
             * 堆和栈区别
             
             * 方法区在不同版本JDK中的位置
+            
+            * [运行时常量池](/basics/java-basic/Runtime-Constant-Pool.md)
             
             * 堆外内存
               
@@ -694,9 +732,27 @@
         
         * 类加载过程
         
-        * 双亲委派（破坏双亲委派）
+        * 如何判断JVM中类和其他类是不是同一个类
         
-        * 模块化（jboss modules、osgi、jigsaw）
+        * [双亲委派原则](/basement/jvm/parents-delegate.md)
+        
+        * [为什么需要双亲委派？](/basement/jvm/why-parents-delegate.md)
+        
+        * [“父子加载器”之间的关系是继承吗？](/basement/jvm/relation-with-parents-delegate.md)
+        
+        * [双亲委派是如何实现的？](/basement/jvm/implements-of-parents-delegate.md)
+        
+        * [如何打破双亲委派](/basement/jvm/ibreak-parants-delegate.md)
+        
+        * [如何自定义类加载器](/basement/jvm/define-class-loader.md)
+        
+        * [双亲委派被破坏的例子](/basement/jvm/sample-of-break-parents-delegate.md)
+        
+        * [为什么JNDI，JDBC等需要破坏双亲委派？](/basement/jvm/spi-parents-delegate.md)
+        
+        * [为什么Tomcat要破坏双亲委派](/basement/jvm/tomcat-parents-delegate.md)
+        
+        * [模块化（jboss modules、osgi、jigsaw）](/basement/jvm/moduler.md)
         
     * 打包工具
         
@@ -711,6 +767,8 @@
         * 什么是编译
         
         * 什么是反编译
+        
+        * [Class常量池](/basics/java-basic/class-contant-pool.md)
         
         * 编译工具：javac
                 
@@ -753,19 +811,19 @@
             
         * 创建型设计模式
         
-            * 单例模式
+            * [单例模式](/advance/design-patterns/singleton-pattern.md)
             
-            * 抽象工厂模式
+            * [抽象工厂模式](/advance/design-patterns/abstract-factory-pattern.md)
             
-            * 建造者模式
+            * [建造者模式](/advance/design-patterns/builder-pattern.md)
             
-            * 工厂模式
+            * [工厂模式](/advance/design-patterns/factory-method-pattern.md)
             
             * 原型模式
             
         * 结构型设计模式
         
-            * 适配器模式
+            * [适配器模式](/advance/design-patterns/adapter-pattern.md)
             
             * 桥接模式
             
@@ -785,7 +843,7 @@
             
             * 命令模式
             
-            * 迭代器模式
+            * [迭代器模式](/advance/design-patterns/iterator-pattern.md)
             
             * 观察者模式
             
@@ -797,7 +855,7 @@
             
             * 状态模式
             
-            * 策略模式
+            * [策略模式](/advance/design-patterns/strategy-pattern.md)
             
             * 责任链模式
             
@@ -886,7 +944,11 @@
         
             * 用Java写一个简单的静态文件的HTTP服务器
             
-        * http/2
+        * HTTP/2
+            
+            * HTTP/2 存在哪些问题？
+            
+        * HTTP/3
         
         * Java RMI，Socket，HttpClient
                 
@@ -964,9 +1026,13 @@
             
             * AOP原理
             
+            * Spring AOP不支持方法自调用的问题
+            
             * 实现Spring的IOC
             
             * spring四种依赖注入方式
+            
+            * 为什么我不建议使用@Transactional声明事务 
             
         * Spring MVC
             
@@ -1223,6 +1289,11 @@
           
             * find、grep、ps、cp、move、tar、head、tail、netstat、lsof、tree、wget、curl、ping、ssh、echo、free、top
             
+            * 为什么kill -9 不能随便执行
+            
+            * rm一个被打开的文件会发生什么            
+            * rm一个被打开的文件会发生什么
+            
         * 进程间通信
         
         * 服务器性能指标
@@ -1348,6 +1419,10 @@
             * redis
             
             * memcached
+            
+        * Redis
+        
+            * Redis多线程 
             
         * 分别使用数据库锁、NoSql实现分布式锁
             
@@ -1691,6 +1766,12 @@
             * 主主复制
     
         * 异地多活
+        
+        * 预案
+        
+        * 预热
+        
+        * 限流
     
     * 高性能
     
@@ -1864,4 +1945,4 @@
         
         * Swift
         
-        * Rust       
+        * Rust

@@ -16,5 +16,7 @@
 ### 关系
 
 CET=UTC/GMT + 1小时
+
 CST=UTC/GMT +8 小时
-CST=CET+9
+
+CST=CET + 7 小时

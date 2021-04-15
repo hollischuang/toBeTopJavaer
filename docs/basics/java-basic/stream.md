@@ -66,7 +66,7 @@ filter 方法用于通过设置的条件过滤出元素。以下代码片段使�
 
     List<String> strings = Arrays.asList("Hollis", "", "HollisChuang", "H", "hollis");
     strings.stream().filter(string -> !string.isEmpty()).forEach(System.out::println);
-    //Hollis, , HollisChuang, H, hollis
+    //Hollis, HollisChuang, H, hollis
     
 
 **map**
@@ -74,13 +74,13 @@ filter 方法用于通过设置的条件过滤出元素。以下代码片段使�
 map 方法用于映射每个元素到对应的结果，以下代码片段使用 map 输出了元素对应的平方数：
 
     List<Integer> numbers = Arrays.asList(3, 2, 2, 3, 7, 3, 5);
-    numbers.stream().map( i -> i*i).forEach(System.out::println);
+    numbers.stream().map(i -> i*i).forEach(System.out::println);
     //9,4,4,9,49,9,25
     
 
 **limit/skip**
 
-limit 返回 Stream 的前面 n 个元素；skip 则是扔掉前 n 个元素。以下代码片段使用 limit 方法保理4个元素：
+limit 返回 Stream 的前面 n 个元素；skip 则是扔掉前 n 个元素。以下代码片段使用 limit 方法保留4个元素：
 
     List<Integer> numbers = Arrays.asList(3, 2, 2, 3, 7, 3, 5);
     numbers.stream().limit(4).forEach(System.out::println);
@@ -120,9 +120,9 @@ distinct主要用来去重，以下代码片段使用 distinct 对元素进行�
 
 ### Stream最终操作
 
-Stream的中间操作得到的结果还是一个Stream，那么如何把一个Stream转换成我们需要的类型呢？比如计算出流中元素的个数、将流装换成集合等。这就需要最终操作（terminal operation）
+Stream的中间操作得到的结果还是一个Stream，那么如何把一个Stream转换成我们需要的类型呢？比如计算出流中元素的个数、将流转换成集合等。这就需要最终操作（terminal operation）
 
-最终操作会消耗流，产生一个最终结果。也就是说，在最终操作之后，不能再次使用流，也不能在使用任何中间操作，否则将抛出异常：
+最终操作会消耗流，产生一个最终结果。也就是说，在最终操作之后，不能再次使用流，也不能再使用任何中间操作，否则将抛出异常：
 
     java.lang.IllegalStateException: stream has already been operated upon or closed
     
@@ -145,7 +145,7 @@ Stream 提供了方法 'forEach' 来迭代流中的每个数据。以下代码�
 
 count用来统计流中的元素个数。
 
-    List<String> strings = Arrays.asList("Hollis", "HollisChuang", "hollis","Hollis666", "Hello", "HelloWorld", "Hollis");
+    List<String> strings = Arrays.asList("Hollis", "HollisChuang", "hollis", "Hollis666", "Hello", "HelloWorld", "Hollis");
     System.out.println(strings.stream().count());
     //7
     
@@ -160,19 +160,19 @@ collect就是一个归约操作，可以接受各种做法作为参数，将流�
     //Hollis, HollisChuang, Hollis666, Hollis
     
 
-接下来，我们还是使用一张图，来演示下，前文的例子中，当一个Stream先后通过filter、map、sort、limit以及distinct处理后会，在分别使用不同的最终操作可以得到怎样的结果：
+接下来，我们还是使用一张图，来演示下，前文的例子中，当一个Stream先后通过filter、map、sort、limit以及distinct处理后，在分别使用不同的最终操作可以得到怎样的结果：
 
 下图，展示了文中介绍的所有操作的位置、输入、输出以及使用一个案例展示了其结果。 ![][6]￼
 
 ### 总结
 
-本文介绍了Java 8中的Stream 的用途，优点等。还接受了Stream的几种用法，分别是Stream创建、中间操作和最终操作。
+本文介绍了Java 8中的Stream 的用途，优点等。还介绍了Stream的几种用法，分别是Stream创建、中间操作和最终操作。
 
 Stream的创建有两种方式，分别是通过集合类的stream方法、通过Stream的of方法。
 
 Stream的中间操作可以用来处理Stream，中间操作的输入和输出都是Stream，中间操作可以是过滤、转换、排序等。
 
-Stream的最终操作可以将Stream转成其他形式，如计算出流中元素的个数、将流装换成集合、以及元素的遍历等。
+Stream的最终操作可以将Stream转成其他形式，如计算出流中元素的个数、将流转换成集合、以及元素的遍历等。
 
  [1]: https://www.hollischuang.com/wp-content/uploads/2019/03/15521192454583.jpg
  [2]: https://www.hollischuang.com/wp-content/uploads/2019/03/15521194075219.jpg
