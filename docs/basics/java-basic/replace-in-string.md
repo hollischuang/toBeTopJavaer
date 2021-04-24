@@ -12,72 +12,17 @@ replaceAll和replaceFirst的区别主要是替换的内容不同，replaceAll是
 
 ### 用法例子
 
-一以下例子参考：http://www.51gjie.com/java/771.html
+    String string = "abc123adb23456aa";
+    System.out.println(string);//abc123adb23456aa
 
-1. replaceAll() 替换符合正则的所有文字
+    //使用replace将a替换成H
+    System.out.println(string.replace("a","H"));//Hbc123Hdb23456HH
+    //使用replaceFirst将第一个a替换成H
+    System.out.println(string.replaceFirst("a","H"));//Hbc123adb23456aa
+    //使用replace将a替换成H
+    System.out.println(string.replaceAll("a","H"));//Hbc123Hdb23456HH
 
-```
-//文字替换（全部） 
-Pattern pattern = Pattern.compile("正则表达式"); 
-Matcher matcher = pattern.matcher("正则表达式 Hello World,正则表达式 Hello World"); 
-//替换所有符合正则的数据 
-System.out.println(matcher.replaceAll("Java")); 
-
-```
-   
-
-2. replaceFirst() 替换第一个符合正则的数据
-
-```
-//文字替换（首次出现字符） 
-Pattern pattern = Pattern.compile("正则表达式"); 
-Matcher matcher = pattern.matcher("正则表达式 Hello World,正则表达式 Hello World"); 
-//替换第一个符合正则的数据 
-System.out.println(matcher.replaceFirst("Java")); 
-    
-```
-    
-3. replaceAll()替换所有html标签
-
-```
-//去除html标记 
-Pattern pattern = Pattern.compile("<.+?>", Pattern.DOTALL); 
-Matcher matcher = pattern.matcher("<a href=\"index.html\">主页</a>"); 
-String string = matcher.replaceAll(""); 
-System.out.println(string); 
-
-```
-
-4. replaceAll() 替换指定文字 
-```
-//替换指定{}中文字 
-String str = "Java目前的发展史是由{0}年-{1}年";
-String[][] object = {
-    new String[] {
-        "\\{0\\}",
-        "1995"
-    },
-    new String[] {
-        "\\{1\\}",
-        "2007"
-    }
-};
-System.out.println(replace(str, object));
-public static String replace(final String sourceString, Object[] object) {
-    String temp = sourceString;
-    for (int i = 0; i < object.length; i++) {
-        String[] result = (String[]) object[i];
-        Pattern pattern = Pattern.compile(result[0]);
-        Matcher matcher = pattern.matcher(temp);
-        temp = matcher.replaceAll(result[1]);
-    }
-    return temp;
-}
-
-```
-
-5. replace()替换字符串
-
-```
-System.out.println("abac".replace("a", "\\a")); //\ab\ac 
-```
+    //使用replaceFirst将第一个数字替换成H
+    System.out.println(string.replaceFirst("\\d","H"));//abcH23adb23456aa
+    //使用replaceFirst将所有数字替换成H
+    System.out.println(string.replaceAll("\\d","H"));//abcHHHadbHHHHHaa

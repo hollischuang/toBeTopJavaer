@@ -130,6 +130,8 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
             * [String对“+”的重载](/basics/java-basic/string-append.md)
 
             * [字符串拼接的几种方式和区别](/basics/java-basic/string-concat.md)
+            
+            * [Java 8中的StringJoiner](/basics/java-basic/stringjoiner-in-java8.md)
 
             * [String.valueOf和Integer.toString的区别](/basics/java-basic/value-of-vs-to-string.md)
 
