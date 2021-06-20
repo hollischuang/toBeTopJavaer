@@ -24,5 +24,5 @@ replaceAll和replaceFirst的区别主要是替换的内容不同，replaceAll是
 
     //使用replaceFirst将第一个数字替换成H
     System.out.println(string.replaceFirst("\\d","H"));//abcH23adb23456aa
-    //使用replaceFirst将所有数字替换成H
+    //使用replaceAll将所有数字替换成H
     System.out.println(string.replaceAll("\\d","H"));//abcHHHadbHHHHHaa
