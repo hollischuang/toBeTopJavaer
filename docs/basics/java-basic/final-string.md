@@ -23,7 +23,7 @@ s = s.concat("ef");
 
 所以，一旦一个string对象在内存(堆)中被创建出来，他就无法被修改。而且，String类的所有方法都没有改变字符串本身的值，都是返回了一个新的对象。
 
-如果我们想要一个可秀改的字符串，可以选择StringBuffer 或者 StringBuilder这两个代替String。
+如果我们想要一个可修改的字符串，可以选择StringBuffer 或者 StringBuilder这两个代替String。
 
 ### 为什么String要设计成不可变
 
