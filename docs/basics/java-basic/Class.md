@@ -1,4 +1,4 @@
-Java的Class类是java反射机制的基础,通过Class类我们可以获得关于一个类的相关信息
+Java的Class类是java反射机制的基础,通过Class类我们可以获得关于一个类的相关信息 
 
 Java.lang.Class是一个比较特殊的类，它用于封装被装入到JVM中的类（包括类和接口）的信息。当一个类或接口被装入的JVM时便会产生一个与之关联的java.lang.Class对象，可以通过这个Class对象对被装入类的详细信息进行访问。
 
