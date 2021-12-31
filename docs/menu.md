@@ -457,7 +457,7 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
             
             * [为什么不能使用BigDecimal的equals比较大小](/basics/java-basic/stop-using-equlas-in-bigdecimal.md)
             
-            * 为什么不能直接使用double创建一个BigDecimal
+            * [为什么不能直接使用double创建一个BigDecimal](/basics/java-basic/stop-create-bigdecimal-with-double.md)
             
         * Java 8
             
