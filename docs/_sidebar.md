@@ -262,7 +262,7 @@
             
             * [什么是泛型](/basics/java-basic/generics.md)
             
-            * [类型擦除](/basics/java-basic/type-erasue.md)
+            * [类型擦除](/basics/java-basic/type-erasure.md)
             
             * [泛型带来的问题](/basics/java-basic/generics-problem.md)
             
