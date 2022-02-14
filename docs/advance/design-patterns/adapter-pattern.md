@@ -125,7 +125,7 @@ GOF中将适配器模式分为类适配器模式和对象适配器模式。区�
         public void charge(){
             System.out.println("开始给我的GalaxyS7手机充电...");
             microUsbInterface.chargeWithMicroUsb();
-            System.out.println("开始给我的GalaxyS7手机充电...");
+            System.out.println("结束给我的GalaxyS7手机充电...");
         }
     
         public MicroUsbInterface getMicroUsbInterface() {
@@ -203,14 +203,14 @@ GOF中将适配器模式分为类适配器模式和对象适配器模式。区�
     ==============================
     开始给我的GalaxyS7手机充电...
     使用MicroUsb型号的充电器充电...
-    开始给我的GalaxyS7手机充电...
+    结束给我的GalaxyS7手机充电...
     ==============================
     开始给我的Iphone6Plus手机充电...
     使用MicroUsb型号的充电器充电...
     结束给我的Iphone6Plus手机充电...
     
 
-上面的例子通过适配器，把一个MicroUsb型号的充电器用来给Iphone充电。从代码层面，就是通过适配器复用了MicroUsb接口及其实现类。在很大程度上福永了已有的代码。
+上面的例子通过适配器，把一个MicroUsb型号的充电器用来给Iphone充电。从代码层面，就是通过适配器复用了MicroUsb接口及其实现类。在很大程度上复用了已有的代码。
 
 ## 优缺点
 

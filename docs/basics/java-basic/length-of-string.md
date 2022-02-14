@@ -134,4 +134,4 @@ int 是一个 32 位变量类型，取正数部分来算的话，他们最长可
 
 在运行期，长度不能超过Int的范围，否则会抛异常。
 
-最后，这个知识点 ，我录制了视频(https://www.bilibili.com/video/BV1uK4y1t7H1/)，其中有关于如何进行实验测试、如何查阅Java规范以及如何对javac进行deubg的技巧。欢迎进一步学习。
+最后，这个知识点 ，我录制了视频([点击跳转](https://www.bilibili.com/video/BV1uK4y1t7H1/)) ，其中有关于如何进行实验测试、如何查阅Java规范以及如何对javac进行deubg的技巧。欢迎进一步学习。
