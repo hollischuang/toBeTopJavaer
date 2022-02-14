@@ -87,6 +87,7 @@
     public void pass(User user) {
       user = new User();
       user.setName("hollischuang");
+      user.setGender("Male");
       System.out.println("print in pass , user is " + user);
     }
     
