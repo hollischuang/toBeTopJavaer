@@ -88,7 +88,7 @@
     
         @Override
         public double calPrice(double bookPrice) {
-            System.out.println("对于中级会员的折扣为20%");
+            System.out.println("对于高级会员的折扣为20%");
             return bookPrice * 0.8;
         }
     }
@@ -149,7 +149,7 @@
         }
     }
     
-    //对于中级会员的折扣为20%
+    //对于高级会员的折扣为20%
     //高级会员图书的最终价格为：240.0
     //对于中级会员的折扣为10%
     //中级会员图书的最终价格为：270.0
