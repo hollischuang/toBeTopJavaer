@@ -535,11 +535,11 @@ Gitee Pages 完整阅读：[进入](http://hollischuang.gitee.io/tobetopjavaer) 
             
             * 线程池原理
             
-            * 为什么不允许使用Executors创建线程池
+            * [为什么不允许使用Executors创建线程池](/basics/concurrent-coding/why-not-executors.md)
             
         * 线程安全
         
-            * 什么是线程安全
+            * [什么是线程安全](/basics/concurrent-coding/thread-safe.md)
             
             * 多级缓存和一致性问题
             
