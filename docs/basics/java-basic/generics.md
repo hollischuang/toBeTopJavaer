@@ -1,4 +1,4 @@
-Java泛型（ generics） 是JDK 5中引⼊的⼀个新特性， 允许在定义类和接⼜的时候使⽤类型参数（ type parameter） 。 
+Java泛型（generics）是JDK 5中引⼊的⼀个新特性， 允许在定义类和接口的时候使⽤类型参数（type parameter）。 
 
 声明的类型参数在使⽤时⽤具体的类型来替换。 泛型最主要的应⽤是在JDK 5中的新集合类框架中。
 
