@@ -97,7 +97,7 @@
 
 > 6 % 8 = 6 ，6 & 7 = 6
 > 
-> 10 & 8 = 2 ，10 & 7 = 2
+> 10 % 8 = 2 ，10 & 7 = 2
 
 [<img src="http://www.hollischuang.com/wp-content/uploads/2018/03/640-1.png" alt="640 (1)" width="421" height="177" class="aligncenter size-full wp-image-2096" />][3]
 
