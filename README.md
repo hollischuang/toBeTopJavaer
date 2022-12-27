@@ -2,9 +2,7 @@
 
 ![](https://img.shields.io/badge/version-v2.0.0-green.svg) ![](https://img.shields.io/badge/author-Hollis-yellow.svg) ![](https://img.shields.io/badge/license-GPL-blue.svg)
 
-成神之路系列丛书的第一本《深入理解Java核心技术（基础篇）》已经正式出版了，这本书囊括了<Java工程师成神之路>中基础篇的几乎全部内容，欢迎大家购买品鉴。
 
-![](docs/contact/book.jpeg)
 
 | 主要版本 | 更新时间       | 备注             |
 | ---- | ---------- | -------------- |
