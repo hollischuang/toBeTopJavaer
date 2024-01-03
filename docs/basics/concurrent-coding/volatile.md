@@ -82,27 +82,30 @@ volatile可以禁止指令重排，这就保证了代码的程序会严格按照
 
     public class Test {
         public volatile int inc = 0;
-    
-        public void increase() {
-            inc++;
-        }
-    
-        public static void main(String[] args) {
-            final Test test = new Test();
-            for(int i=0;i<10;i++){
-                new Thread(){
-                    public void run() {
-                        for(int j=0;j<1000;j++)
-                            test.increase();
-                    };
-                }.start();
-            }
-    
-            while(Thread.activeCount()>1)  //保证前面的线程都执行完
-                Thread.yield();
-            System.out.println(test.inc);
-        }
+
+    public void increase() {
+        inc++;
     }
+
+    public static void main(String[] args) throws InterruptedException {
+        final Test test = new Test();
+        for(int i=0;i<10;i++){
+            Thread threads[]=new Thread[10];
+            threads[i]=new Thread(){
+                @Override
+                public void run() {
+                    for (int j = 0; j < 1000; j++) {
+                        test.increase();
+                    }
+                }
+            };
+            threads[i].join();
+            threads[i].start();
+        }
+
+        System.out.println(test.inc);
+    }
+}
 
 
 以上代码比较简单，就是创建10个线程，然后分别执行1000次`i++`操作。正常情况下，程序的输出结果应该是10000，但是，多次执行的结果都小于10000。这其实就是`volatile`无法满足原子性的原因。
