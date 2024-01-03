@@ -15,7 +15,7 @@
 
 Java成神之路全套面试题——围绕成神之路，500多道题，60多万字>>>
 
-![Java八股](http://www.hollischuang.com/wp-content/uploads/2023/10/15.jpeg)
+![Java八股](http://www.hollischuang.com/wp-content/uploads/2023/10/640.png)
 
 
 扫码下单后，按照短信提示操作即可。
